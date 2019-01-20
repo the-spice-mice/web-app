@@ -4,12 +4,15 @@ This repository is a prototype for dog sitting web app created in Graphic Design
 
 ## Team members
 
-- ### Katie "Catherine Zeta Jones" Sheedy
+- ### Katie "Katherine Zeta-Jones" Sheedy
   *Project Manager*
+
   Github: https://github.com/ksheedy
 - ### Holli "Big Sauce" Holton
-  *UX Leadr*
+  *UX Leader*
+
   Github: https://github.com/hollixholton
 - ### Adam "Dadam" Robillard
   *Dev Lead*
+
   Github: https://github.com/arobillard
