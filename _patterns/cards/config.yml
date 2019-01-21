@@ -4,4 +4,7 @@ description: |
 patterns:
   profile-1:
     title: "Profile Card 1"
-    width: 420
+    width: 350
+  profile-2:
+    title: "Profile Card 2"
+    width: 350
