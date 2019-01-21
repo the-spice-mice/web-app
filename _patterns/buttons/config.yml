@@ -1,0 +1,44 @@
+title: "Buttons"
+description: |
+  A collection of buttons for all occaisions.
+patterns:
+  basic:
+    title: "Basic Button"
+    description: |
+      A basic button that should be used in most scenarios.
+    fields:
+      - name: text
+        type: string
+        example: "Bark Bark"
+  full:
+    title: "Full Width Button"
+    description: |
+      A full button that can be used in cards and scenarios where a full with button is more visually appealing.
+    fields:
+      - name: text
+        type: string
+        example: "Bark Bark"
+  ghost:
+    title: "Ghost Button"
+    description: |
+      A basic button that should be used in most scenarios.
+    fields:
+      - name: text
+        type: string
+        example: "Bark Bark"
+  icon:
+    title: "Icon Button"
+    description: |
+      A basic button that should be used in most scenarios.
+    fields:
+      - name: text
+        type: string
+        example: "Bark Bark"
+  light:
+    title: "Light Button"
+    description: |
+      A basic button that should be used in most scenarios.
+    fields:
+      - name: text
+        type: string
+        example: "Bark Bark"

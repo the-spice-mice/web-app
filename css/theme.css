@@ -1,0 +1,25 @@
+:root {
+  --color-primary: #f6242d;
+  --color-primary-light: #f5959a;
+  --color-primary-dark: #98161c;
+  --color-secondary: #83e1e8;
+  --color-secondary-light: #bde6e9;
+  --color-secondary-dark: #4e888c;
+  --color-grey: #d3d3d3;
+  --color-grey-light: #f2f2f2;
+  --color-grey-dark: #696969;
+
+  --font-primary: Raleway, sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+
+  --transition-primary: .25s ease-in-out;
+  --border-radius: 8px;
+}
+
+html {
+  font-family: var(--font-primary);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-secondary);
+}

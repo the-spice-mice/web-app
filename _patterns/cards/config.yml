@@ -1,0 +1,10 @@
+title: "Cards"
+description: |
+  A collection of card options.
+patterns:
+  profile-1:
+    title: "Profile Card 1"
+    width: 350
+  profile-2:
+    title: "Profile Card 2"
+    width: 350

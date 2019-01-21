@@ -1,0 +1,143 @@
+.card-profile-1 {
+  padding-top: 150%;
+  position: relative;
+  /* background-image: url('../images/profile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .55)), url('/images/profile.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 60%, cover;
+  background-position: left bottom, center bottom;
+  transition: all .25s;
+}
+
+.card-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.favourite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 0
+  );
+  background-color: var(--color-grey-dark);
+  width: 4rem;
+  height: 4rem;
+  transition: all .25s;
+  opacity: 0;
+}
+
+.card-profile-1:hover .favourite {
+  opacity: .5;
+}
+.card-profile-1:hover .favourite:hover {
+  opacity: 1;
+}
+
+.favourite-icon {
+  position: absolute;
+  top: .4rem;
+  right: .4rem;
+  width: 1.6rem;
+  transition: opacity .25s;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.favourite-icon:hover {
+  opacity: .75;
+}
+
+.active.favourite {
+  opacity: 1;
+  background-color: var(--color-primary);
+}
+
+.card-profile-1:hover .favourite,
+.active .favourite-icon {
+  opacity: 1;
+}
+
+.active .favourite-icon:hover {
+  opacity: .9;
+}
+
+.rating img {
+  width: 1.5rem;
+}
+
+.card-profile-2 {
+  position: relative;
+  background-color: var(--color-grey-light);
+  border-radius: 7.5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .25);
+}
+
+.outline {
+  border: 2px solid var(--color-grey);
+  border-bottom: 0;
+  border-radius: 7.5px 7.5px 0 0;
+}
+
+.category {
+  display: inline-block;
+  background-color: var(--color-primary);
+  border-radius: 0 0 7.5px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+
+.card-profile-2 .profile-img-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 2px solid var(--color-primary);
+}
+
+.card-profile-2 .profile-img-wrap img {
+  margin-top: -1.75rem;
+}
+
+.card-profile-2 h3 {
+  color: var(--color-primary);
+}
+
+.card-profile-2 .unit {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: #fff;
+  transition: all .25s;
+}
+
+.card-profile-2 .unit:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.card-profile-2 .unit:last-child {
+  background-color: var(--color-grey-dark);
+}
+
+.card-profile-2 .unit:last-child:hover {
+  background-color: var(--color-grey);
+}
+
+.card-profile-2 .rating {
+  color: var(--color-primary);
+}
