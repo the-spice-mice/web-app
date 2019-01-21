@@ -1,0 +1,6 @@
+permalink: pretty
+
+theme: jekyll_patternbot
+
+patternbot:
+  title: "Sleep Rover"
