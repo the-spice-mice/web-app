@@ -14,6 +14,7 @@
 
   --transition-primary: .25s ease-in-out;
   --border-radius: 8px;
+  --shadow-primary: 0 1px 5px rgba(0, 0, 0, .15);
 }
 
 html {
@@ -22,4 +23,11 @@ html {
 
 h1, h2, h3 {
   font-family: var(--font-secondary);
+}
+
+a {
+  color: var(--color-primary);
+  transition:
+    color var(--transition-primary),
+    background-color var(--transition-primary);
 }
