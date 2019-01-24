@@ -1,0 +1,13 @@
+title: "Profile Photo"
+description: |
+  A profile photo used for accounts.
+patterns:
+  profile-photo:
+    width:
+    fields:
+      - name: profileImg
+        type: string
+        example: "profile.jpg"
+      - name: size
+        type: string
+        example: "5rem"

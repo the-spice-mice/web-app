@@ -1,0 +1,6 @@
+title: "Header"
+description: |
+  The main navigation for the website.
+patterns:
+  navbar:
+    height: 400

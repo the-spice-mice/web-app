@@ -31,3 +31,77 @@ a {
     color var(--transition-primary),
     background-color var(--transition-primary);
 }
+
+/* ---------- Color Applications ---------- */
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.bg-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+
+.text-primary-dark {
+  color: var(--color-primary-dark);
+}
+
+.bg-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+.text-primary-light {
+  color: var(--color-primary-light);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.bg-secondary-dark {
+  background-color: var(--color-secondary-dark);
+}
+
+.text-secondary-dark {
+  color: var(--color-secondary-dark);
+}
+
+.bg-secondary-light {
+  background-color: var(--color-secondary-light);
+}
+
+.text-secondary-light {
+  color: var(--color-secondary-light);
+}
+
+.bg-grey {
+  background-color: var(--color-grey);
+}
+
+.text-grey {
+  color: var(--color-grey);
+}
+
+.bg-grey-dark {
+  background-color: var(--color-grey-dark);
+}
+
+.text-grey-dark {
+  color: var(--color-grey-dark);
+}
+
+.bg-grey-light {
+  background-color: var(--color-grey-light);
+}
+
+.text-grey-light {
+  color: var(--color-grey-light);
+}
