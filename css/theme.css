@@ -25,11 +25,36 @@ h1, h2, h3 {
   font-family: var(--font-secondary);
 }
 
+h1 {
+  color: #000;
+  text-align: center;
+}
+
+h2 {
+  color: #000;
+}
+
+h3 {
+  color: var(--color-grey-dark)
+}
+
+/*@utility Apply to create red background header*/
+.red-header {
+  color: #ffffff;
+  background-color: var(--color-primary);
+  border-radius: 7.5px 0px 7.5px 0px;
+  padding: 5px 0;
+}
+
 a {
   color: var(--color-primary);
   transition:
     color var(--transition-primary),
     background-color var(--transition-primary);
+}
+
+mark {
+  background-color: var(--color-secondary);
 }
 
 /* ---------- Color Applications ---------- */
