@@ -1,0 +1,6 @@
+.profile-photo {
+  border-radius: 100%;
+  overflow: hidden;
+  border: 2px solid var(--color-grey-dark);
+  transition: border var(--transition-primary);
+}

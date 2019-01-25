@@ -1,0 +1,58 @@
+<header class="masthead sticky">
+  <div class="wrapper flex-wrap gutter pad-t-1-4 pad-b-1-4">
+    {% if page.url == '/' %}
+      <h1 class="push-0 logo tera">
+        <a class="icon-link inline-block" href="#">
+          <i class="icon i-1-1-2 push-1-4 push-r-1-8">
+            <svg><use xlink:href="/images/icons.svg#logo"></use></svg>
+          </i>
+          <span class="icon-label">Sleep Rover</span>
+        </a>
+      </h1>
+    {% else %}
+      <strong class="block logo tera">
+        <a class="icon-link inline-block" href="#">
+          <i class="icon i-2 push-1-4 push-r-1-8">
+            <svg><use xlink:href="/images/icons.svg#logo"></use></svg>
+          </i>
+          <span class="icon-label">Sleep Rover</span>
+        </a>
+      </strong>
+    {% endif %}
+    {% include nav.html navClass='nav flex-grow milli' ulClass='list-group push-0' %}
+    <div class="sign-in milli">
+      <a class="" href="#">Sign In</a>
+    </div>
+    <div class="profile-icon-wrap">
+      <a class="relative inline-block unread" href="#">
+        {% pattern profile-photo/profile-photo profileImg="profile.jpg" size="2rem" %}
+        <div class="profile-alert inline-block micro island-1-8">
+          <span class="pin-c">1</span>
+        </div>
+      </a>
+      <div class="notifications">
+        <ul class="list-group pad-t-1-2 pad-b-1-2 push-0 milli">
+          <li>
+            <a class="block gutter pad-t-1-2 pad-b-1-2" href="#">Profile</a>
+          </li>
+          <li class="pad-b-1-2">
+            <a class="block gutter pad-t-1-2 pad-b-1-2" href="#">Log Out</a>
+          </li>
+          <li>
+            <p class="push-0 gutter pad-t pad-b-1-2 notifications-title"><span class="bold inline-block push-r-1-4">Notifications</span><span class="title-alert">1</span></p>
+            <ol class="list-group notifications-list push-0">
+              <li>
+                <a class="block gutter pad-t-1-2 pad-b-1-2 unseen" href="#">New booking request from AJ</a>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a class="tog-nav m-0 inline-block" href="#nav-footer">
+      <span class="tog tog-top"></span>
+      <span class="tog tog-middle"></span>
+      <span class="tog tog-bottom"></span>
+    </a>
+  </div>
+</header>
