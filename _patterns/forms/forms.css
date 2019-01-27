@@ -1,0 +1,14 @@
+textarea,
+input:not([type="checkbox"]),
+input:not([type="radio"]) {
+  background-color: #fff;
+  border: 2px solid var(--color-grey);
+  border-radius: var(--border-radius);
+  height: calc(1.3rem + .65rem + .65rem);
+  padding: .65rem .65rem;
+}
+
+label {
+  color: var(--color-grey-dark);
+  font-weight: bold;
+}

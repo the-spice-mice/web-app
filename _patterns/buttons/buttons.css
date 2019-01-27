@@ -1,3 +1,4 @@
+button,
 .btn {
   transition: all .25s;
   padding: .375em 1.5em .42em;
@@ -7,6 +8,8 @@
   border-color: var(--color-primary);
 }
 
+button:hover,
+button:focus,
 .btn:hover,
 .btn:focus {
   background-color: var(--color-primary-dark);

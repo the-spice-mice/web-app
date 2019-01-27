@@ -1,3 +1,33 @@
+.card {
+  background-color: var(--color-grey-light);
+  border-radius: var(--border-radius);
+  /* border: 2px solid var(--color-grey); */
+  box-shadow: var(--shadow-primary);
+}
+
+.close-card {
+  color: var(--color-grey);
+  transition:
+    color var(--transition-primary);
+}
+
+.close-card:hover {
+  color: var(--color-grey-dark);
+}
+
+.recent-users a {
+  color: #000;
+  text-decoration: none;
+  transition:
+    background-color var(--transition-primary);
+  border-radius: var(--border-radius);
+}
+
+.recent-users a:hover {
+  background-color: #fff;
+}
+
+
 .card-profile-1 {
   padding-top: 150%;
   position: relative;

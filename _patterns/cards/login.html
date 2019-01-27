@@ -1,0 +1,52 @@
+<div class="card relative">
+  <strong class="red-header inline-block tera gutter-2 pad-t-1-8 pad-b-1-8 not-bold">Log In</strong>
+  <a class="close-card inline-block pin-tr gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">
+    <i class="icon i-1">
+      <svg><use xlink:href="/images/icons.svg#close"></use></svg>
+    </i>
+    <span class="icon-label hidden">Close</span>
+  </a>
+  <form class="sign-in-form pad-t gutter">
+    <div class="grid island-1-2">
+      <div class="unit [ xs-1 ] island-1-2 push-1-4">
+        <label class="push-1-4" for="sign-in-email">Email</label>
+        <input id="sign-in-email" type="email" name="sign-in-email">
+      </div>
+      <div class="unit [ xs-1 ] island-1-2">
+        <label class="push-1-4" for="sign-in-password">Password</label>
+        <input id="sign-in-password" type="password" name="sign-in-password">
+      </div>
+      <div class="unit [ xs-1 ] island-1-2">
+        <p class="milli">Not a member? <a href="#">Sign up now.</a></p>
+        <button type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+  <div class="grid island recent-users">
+    <div class="unit [ xs-1 ] gutter pad-b-1-2 pad-t-1-2">
+      <p class="push-0 bold text-grey-dark">Recent users:</p>
+    </div>
+    <a class="unit [ xs-1 ] gutter pad-b-1-2 pad-t-1-2" href="#">
+      <div class="flex-wrap flex-ai-center">
+        {% pattern profile-photo/profile-photo wrapClass='push-r' profileImg="profile.jpg" size="3rem" %}
+        <div class="flex-grow">
+          <p class="push-0 mega">Helen Jones</p>
+        </div>
+        <i class="icon i-1">
+          <svg><use xlink:href="/images/icons.svg#chevron-right"></use></svg>
+        </i>
+      </div>
+    </a>
+    <a class="unit [ xs-1 ] gutter pad-b-1-2 pad-t-1-2" href="#">
+      <div class="flex-wrap flex-ai-center">
+        {% pattern profile-photo/profile-photo wrapClass='push-r' profileImg="profile-hugh.jpg" size="3rem" %}
+        <div class="flex-grow">
+          <p class="push-0 mega">Hugh Andrews</p>
+        </div>
+        <i class="icon i-1">
+          <svg><use xlink:href="/images/icons.svg#chevron-right"></use></svg>
+        </i>
+      </div>
+    </a>
+  </div>
+</div>

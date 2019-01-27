@@ -5,6 +5,12 @@ patterns:
   profile-1:
     title: "Profile Card 1"
     width: 350
+    padding: 20px
   profile-2:
     title: "Profile Card 2"
     width: 350
+    padding: 20px
+  login:
+    title: "Log In"
+    width: 450
+    padding: 20px

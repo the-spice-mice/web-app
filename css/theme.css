@@ -43,7 +43,7 @@ h3 {
   color: #ffffff;
   background-color: var(--color-primary);
   border-radius: 7.5px 0px 7.5px 0px;
-  padding: 5px 0;
+  /* padding: 5px 0; */
 }
 
 a {
@@ -129,4 +129,17 @@ mark {
 
 .text-grey-light {
   color: var(--color-grey-light);
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-ai-center {
+  align-items: center;
+}
+
+.flex-grow {
+  flex-grow: 2;
 }
