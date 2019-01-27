@@ -81,16 +81,6 @@
   color: var(--color-primary);
 }
 
-.flex-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.flex-grow {
-  flex-grow: 2;
-}
-
 .sign-in a {
   transition:
     background-color var(--transition-primary),
