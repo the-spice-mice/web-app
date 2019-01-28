@@ -6,11 +6,40 @@ patterns:
     title: "Profile Card 1"
     width: 350
     padding: 20px
+    fields:
+      - name: profileImg
+        type: string
+        example: "profile-hugh.jpg"
+      - name: name
+        type: string
+        example: "Hugh Andrews"
+      - name: location
+        type: string
+        example: "Ottawa, ON"
+      - name: link
+        type: string
+        example: "#"
   profile-2:
     title: "Profile Card 2"
     width: 350
     padding: 20px
-  login:
-    title: "Log In"
+    fields:
+      - name: profileImg
+        type: string
+        example: "profile-hugh.jpg"
+      - name: name
+        type: string
+        example: "Helen Jones"
+      - name: location
+        type: string
+        example: "Nepean, ON"
+      - name: bio
+        type: string
+        example: "Hi! I have been dog sitting for over 5 years and would love to meet your dog!"
+      - name: link
+        type: string
+        example: "#"
+  signin:
+    title: "Sign In"
     width: 450
     padding: 20px

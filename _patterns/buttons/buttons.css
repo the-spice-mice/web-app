@@ -1,4 +1,4 @@
-button,
+button:not(.favourite),
 .btn {
   transition: all .25s;
   padding: .375em 1.5em .42em;
@@ -8,8 +8,8 @@ button,
   border-color: var(--color-primary);
 }
 
-button:hover,
-button:focus,
+button:not(.favourite):hover,
+button:not(.favourite):focus,
 .btn:hover,
 .btn:focus {
   background-color: var(--color-primary-dark);

@@ -1,8 +1,17 @@
 .card {
   background-color: var(--color-grey-light);
   border-radius: var(--border-radius);
-  /* border: 2px solid var(--color-grey); */
   box-shadow: var(--shadow-primary);
+  text-decoration: none;
+  color: #000;
+  display: block;
+  transition:
+    box-shadow var(--transition-primary);
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: var(--shadow-dark);
 }
 
 .close-card {
@@ -11,7 +20,8 @@
     color var(--transition-primary);
 }
 
-.close-card:hover {
+.close-card:hover,
+.close-card:focus {
   color: var(--color-grey-dark);
 }
 
@@ -23,23 +33,44 @@
   border-radius: var(--border-radius);
 }
 
-.recent-users a:hover {
+.recent-users a:hover,
+.recent-users a:focus {
   background-color: #fff;
 }
 
+.card-sign-in {
+  width: 100%;
+  max-width: 25em;
+}
+
+.sign-in-fade-in {
+  display: none;
+}
+
+.sign-in-wrap {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - 2.921875rem);
+  background-color: rgba(0, 0, 0, .8);
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .card-profile-1 {
   padding-top: 150%;
   position: relative;
-  /* background-image: url('../images/profile.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .55)), url('/images/profile.jpg');
   background-repeat: no-repeat;
   background-size: 100% 60%, cover;
   background-position: left bottom, center bottom;
-  transition: all .25s;
+  transition: all var(--transition-primary);
+}
+
+.card-profile-1 h3 {
+  color: #fff;
 }
 
 .card-content {
@@ -53,54 +84,43 @@
 
 .favourite {
   position: absolute;
-  top: 0;
-  right: 0;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    0 0
-  );
-  background-color: var(--color-grey-dark);
-  width: 4rem;
-  height: 4rem;
-  transition: all .25s;
+  top: .65rem;
+  right: .65rem;
+  color: #fff;
+  background-color: transparent;
+  border: 0;
   opacity: 0;
+  transition:
+    opacity var(--transition-primary),
+    color var(--transition-primary);
 }
 
-.card-profile-1:hover .favourite {
+.card:hover .favourite,
+.card:focus .favourite {
   opacity: .5;
 }
-.card-profile-1:hover .favourite:hover {
+
+.card:hover .favourite.favourited,
+.favourite.favourited,
+.card:hover .favourite:hover,
+.favourite:focus {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.favourite svg:last-child {
+  opacity: 0;
+  transition:
+    opacity var(--transition-primary);
+}
+
+.favourite.favourited svg:last-child,
+.favourite:hover svg:last-child {
   opacity: 1;
 }
 
-.favourite-icon {
-  position: absolute;
-  top: .4rem;
-  right: .4rem;
-  width: 1.6rem;
-  transition: opacity .25s;
-  opacity: .5;
-  cursor: pointer;
-}
-
-.favourite-icon:hover {
-  opacity: .75;
-}
-
-.active.favourite {
-  opacity: 1;
-  background-color: var(--color-primary);
-}
-
-.card-profile-1:hover .favourite,
-.active .favourite-icon {
-  opacity: 1;
-}
-
-.active .favourite-icon:hover {
-  opacity: .9;
+.favourite.favourited {
+  color: var(--color-primary);
 }
 
 .rating img {
@@ -112,7 +132,7 @@
   background-color: var(--color-grey-light);
   border-radius: 7.5px;
   overflow: hidden;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, .25);
+  box-shadow: var(--shadow-primary);
 }
 
 .outline {
@@ -131,16 +151,6 @@
   color: #fff;
 }
 
-.card-profile-2 .profile-img-wrap {
-  margin-left: auto;
-  margin-right: auto;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 100%;
-  overflow: hidden;
-  border: 2px solid var(--color-primary);
-}
-
 .card-profile-2 .profile-img-wrap img {
   margin-top: -1.75rem;
 }
@@ -151,23 +161,43 @@
 
 .card-profile-2 .unit {
   text-decoration: none;
-  background-color: var(--color-primary);
-  color: #fff;
-  transition: all .25s;
+  /* background-color: var(--color-primary); */
+  color: var(--color-primary);
+  transition: var(--transition-primary);
+  padding-left: 1.3rem;
+  border-radius: 0 var(--border-radius) 0 var(--border-radius);
 }
 
 .card-profile-2 .unit:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary);
+  color: #fff;
 }
 
 .card-profile-2 .unit:last-child {
-  background-color: var(--color-grey-dark);
+  /* background-color: var(--color-grey-dark); */
+  border-radius: var(--border-radius) 0 var(--border-radius) 0;
 }
 
-.card-profile-2 .unit:last-child:hover {
+/* .card-profile-2 .unit:last-child:hover {
   background-color: var(--color-grey);
-}
+} */
 
 .card-profile-2 .rating {
   color: var(--color-primary);
+}
+
+@media only screen and (min-width: 38em) {
+
+  .sign-in-wrap {
+    height: calc(100vh - 46px);
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .sign-in-wrap {
+    height: calc(100vh - 2.921875rem);
+  }
+
 }

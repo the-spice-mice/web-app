@@ -1004,7 +1004,7 @@ select {
 
 /* stylelint-disable no-descending-specificity */
 
-button,
+button:not(.favourite),
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -1030,8 +1030,8 @@ button::-moz-focus-inner {
 
 /* stylelint-enable */
 
-button:focus,
-button:hover,
+button:not(.favourite):focus,
+button:not(.favourite):hover,
 .btn:focus,
 .btn:hover {
   background-color: #000;

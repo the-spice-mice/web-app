@@ -1,9 +1,9 @@
-<div class="card-profile-1">
+<a class="card card-profile-1" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .55)), url('/images/{{include.profileImg}}');" href="{{include.link}}">
   <div class="card-content island">
-    <h3 class="push-0">Anne Scott</h3>
-    <p class="push-1-2">Nepean, ON</p>
+    <h3 class="push-0">{{include.name}}</h3>
+    <p class="push-1-2">{{include.location}}</p>
     <div class="rating">
-      <ol class="list-group-inline push-1-2">
+      <ol class="list-group-inline">
         <li><i class="icon i-1"><svg><use xlink:href="/images/icons.svg#bone"></use></svg></i></li>
         <li><i class="icon i-1"><svg><use xlink:href="/images/icons.svg#bone"></use></svg></i></li>
         <li><i class="icon i-1"><svg><use xlink:href="/images/icons.svg#bone"></use></svg></i></li>
@@ -12,10 +12,16 @@
       </ol>
     </div>
     <div class="btn-container">
-      <a class="btn btn-style-1 milli" href="#">Book Now</a>
+      <span class="btn btn-style-1 milli">Book Now</span>
     </div>
   </div>
-  <div class="favourite">
+  <!-- <div class="favourite">
     <img class="favourite-icon" src="images/heart.svg" alt="">
-  </div>
-</div>
+  </div> -->
+  <button class="favourite" href="#">
+    <i class="icon i-1-1-2">
+      <svg><use xlink:href="/images/icons.svg/#heart-lines"></svg>
+      <svg><use xlink:href="/images/icons.svg/#heart"></svg>
+    </i>
+  </button>
+</a>
