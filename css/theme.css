@@ -14,7 +14,8 @@
 
   --transition-primary: .25s ease-in-out;
   --border-radius: 8px;
-  --shadow-primary: 0 1px 5px rgba(0, 0, 0, .15);
+  --shadow-primary: 1px 1px 5px rgba(0, 0, 0, .25);
+  --shadow-dark: 1px 1px 5px rgba(0, 0, 0, .5);
 }
 
 html {
@@ -51,6 +52,11 @@ a {
   transition:
     color var(--transition-primary),
     background-color var(--transition-primary);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-primary-dark);
 }
 
 mark {

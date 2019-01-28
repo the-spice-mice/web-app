@@ -7,7 +7,13 @@ patterns:
     fields:
       - name: profileImg
         type: string
-        example: "profile.jpg"
+        example: "profile-helen.jpg"
       - name: size
         type: string
         example: "5rem"
+      - name: borderColor
+        type: string
+        example: "var(--color-grey-dark)"
+      - name: wrapClass
+        type: string
+        example: ""

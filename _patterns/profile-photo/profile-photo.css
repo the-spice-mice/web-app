@@ -4,3 +4,8 @@
   border: 2px solid var(--color-grey-dark);
   transition: border var(--transition-primary);
 }
+
+.profile-photo-center {
+  margin-left: auto;
+  margin-right: auto;
+}
