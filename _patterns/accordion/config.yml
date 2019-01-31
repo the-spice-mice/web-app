@@ -1,0 +1,13 @@
+title: "Accordion"
+description: |
+  A basic expanding according for FAQs and other content.
+patterns:
+  accordion:
+    title: "Accordion"
+    fields:
+      - name: title
+        type: string
+        example: "Accordion Title"
+      - name: text
+        type: string
+        example: "Accordion text"
