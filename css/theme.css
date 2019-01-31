@@ -65,73 +65,109 @@ mark {
 
 /* ---------- Color Applications ---------- */
 
+/*@utility Used to apply the primary colour as the background colour */
+
 .bg-primary {
   background-color: var(--color-primary);
 }
+
+/*@utility Used to apply the primary colour as the text colour */
 
 .text-primary {
   color: var(--color-primary);
 }
 
+/*@utility Used to apply the primary-dark colour as the background colour */
+
 .bg-primary-dark {
   background-color: var(--color-primary-dark);
 }
+
+/*@utility Used to apply the primary-dark colour as the text colour */
 
 .text-primary-dark {
   color: var(--color-primary-dark);
 }
 
+/*@utility Used to apply the primary-light colour as the background colour */
+
 .bg-primary-light {
   background-color: var(--color-primary-light);
 }
+
+/*@utility Used to apply the primary-light colour as the text colour */
 
 .text-primary-light {
   color: var(--color-primary-light);
 }
 
+/*@utility Used to apply the secondary colour as the background colour */
+
 .bg-secondary {
   background-color: var(--color-secondary);
 }
+
+/*@utility Used to apply the secondary colour as the text colour */
 
 .text-secondary {
   color: var(--color-secondary);
 }
 
+/*@utility Used to apply the secondary-dark colour as the background colour */
+
 .bg-secondary-dark {
   background-color: var(--color-secondary-dark);
 }
+
+/*@utility Used to apply the secondary-dark colour as the text colour */
 
 .text-secondary-dark {
   color: var(--color-secondary-dark);
 }
 
+/*@utility Used to apply the secondary-light colour as the background colour */
+
 .bg-secondary-light {
   background-color: var(--color-secondary-light);
 }
+
+/*@utility Used to apply the secondary-light colour as the text colour */
 
 .text-secondary-light {
   color: var(--color-secondary-light);
 }
 
+/*@utility Used to apply the grey colour as the background colour */
+
 .bg-grey {
   background-color: var(--color-grey);
 }
+
+/*@utility Used to apply the grey colour as the text colour */
 
 .text-grey {
   color: var(--color-grey);
 }
 
+/*@utility Used to apply the grey-dark colour as the background colour */
+
 .bg-grey-dark {
   background-color: var(--color-grey-dark);
 }
+
+/*@utility Used to apply the grey-dark colour as the text colour */
 
 .text-grey-dark {
   color: var(--color-grey-dark);
 }
 
+/*@utility Used to apply the grey-light colour as the background colour */
+
 .bg-grey-light {
   background-color: var(--color-grey-light);
 }
+
+/*@utility Used to apply the grey-light colour as the text colour */
 
 .text-grey-light {
   color: var(--color-grey-light);
