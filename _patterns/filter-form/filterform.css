@@ -16,26 +16,6 @@
   border-radius: 7.5px 7.5px;
 }
 
-label {
-  font-family: var(--font-primary);
-  font-weight: bold;
-  color: var(--color-grey-dark);
-}
-
-.input-icon {
-  background: url("../../images/icon-blank.svg") left / contain no-repeat;
-  padding: 10px;
-  color: var(--color-grey-dark);
-}
-
-::-webkit-input-placeholder {
-  padding-left: 35px;
-}
-
-input[type=date] {
-  padding-left: 35px;
-}
-
 .form-button {
   max-width: 300px;
   border-radius: 7.5px;
