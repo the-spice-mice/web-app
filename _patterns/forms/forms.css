@@ -17,9 +17,6 @@ label {
 
 .input-icon {
   background: url("../../images/icon-blank.svg") left / contain no-repeat;
-}
-
-#basic-icon {
   padding-left: 3rem;
 }
 
