@@ -22,11 +22,6 @@ label {
   color: var(--color-grey-dark);
 }
 
-select, input {
-  border: 2px solid var(--color-grey);
-  border-radius: 3px;
-}
-
 .input-icon {
   background: url("../../images/icon-blank.svg") left / contain no-repeat;
   padding: 10px;
