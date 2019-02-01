@@ -26,3 +26,26 @@ label {
 input[type=date] {
   padding-left: 3rem;
 }
+
+.select-box{
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0;
+}
+.select-box:after{
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--color-secondary);
+  position: absolute;
+  top: 62%;
+  right: 1rem;
+  content: "";
+  z-index: 98;
+ }
+.select-box select{
+  position: relative;
+  z-index: 99;
+  background: none;
+}
