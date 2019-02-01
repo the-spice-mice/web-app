@@ -1,4 +1,5 @@
 textarea,
+select,
 input:not([type="checkbox"]),
 input:not([type="radio"]) {
   background-color: #fff;
@@ -9,6 +10,15 @@ input:not([type="radio"]) {
 }
 
 label {
-  color: var(--color-grey-dark);
+  font-family: var(--font-primary);
   font-weight: bold;
+  color: var(--color-grey-dark);
+}
+
+.input-icon {
+  background: url("../../images/icon-blank.svg") left / contain no-repeat;
+}
+
+input[type=date] {
+  padding-left: 5rem;
 }
