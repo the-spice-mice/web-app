@@ -1,0 +1,8 @@
+a:hover {
+  color: var(--color-secondary);
+  opacity: .4;
+}
+
+.bg {
+  background-color: var(--color-grey-light);
+}
