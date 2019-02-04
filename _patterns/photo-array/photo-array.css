@@ -4,5 +4,12 @@ a:hover {
 }
 
 .bg {
-  background-color: var(--color-grey-light);
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.photo-array-image {
+  width: 60vw;
 }
