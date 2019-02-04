@@ -17,18 +17,19 @@ label {
 
 input:not([type="checkbox"]).input-icon,
 input:not([type="radio"]).input-icon {
-  background: url("../../images/icon-blank.svg") left / contain no-repeat;
-  padding-left: 3rem;
+  background: url("../../images/icon-blank.svg") .5rem center / 1.5rem auto no-repeat #fff;
+  padding-left: 2.5rem;
 }
 
 input[type=date] {
-  padding-left: 3rem;
+  padding-left: 2.5rem;
 }
 
 .select-box{
   overflow: hidden;
   position: relative;
 }
+
 .select-box:after{
   width: 0;
   height: 0;
@@ -41,8 +42,33 @@ input[type=date] {
   content: "";
   z-index: 98;
  }
+
 .select-box select{
   position: relative;
   z-index: 99;
   background: none;
+}
+
+@media only screen and (min-width: 38em) {
+
+  textarea,
+  select,
+  input:not([type="checkbox"]),
+  input:not([type="radio"]) {
+    height: calc(1.4rem + .7rem + .7rem);
+    padding: .7rem .7rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  textarea,
+  select,
+  input:not([type="checkbox"]),
+  input:not([type="radio"]) {
+    height: calc(1.5rem + .75rem + .75rem);
+    padding: .75rem .75rem;
+  }
+
 }
