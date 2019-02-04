@@ -43,8 +43,10 @@ h3 {
 .red-header {
   color: #ffffff;
   background-color: var(--color-primary);
-  border-radius: 7.5px 0px 7.5px 0px;
+  border-radius: var(--border-radius) 0px var(--border-radius) 0px;
   /* padding: 5px 0; */
+  display: inline-block;
+  padding: .1625rem 2.6rem;
 }
 
 a {
@@ -184,4 +186,20 @@ mark {
 
 .flex-grow {
   flex-grow: 2;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .red-header {
+    padding: .175rem 2.8rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .red-header {
+    padding: .1875rem 3rem;
+  }
+
 }
