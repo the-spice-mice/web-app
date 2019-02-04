@@ -1,0 +1,16 @@
+- profileImg: profile-hugh.jpg
+  topSitter: true
+  name: Hugh Andrews
+  location: Ottawa, ON
+  link: "#"
+  rating: 4
+  bio: "Hi! I have been dog sitting for over 5 years and would love to meet your dog!"
+  favourited: true
+- profileImg: profile-helen.jpg
+  topSitter: false
+  name: Helen Jones
+  location: Nepean, ON
+  link: "#"
+  rating: 2
+  bio: "Hey there! I am a new sitter very excited to meet new dogs and share my love!"
+  favourited: false
