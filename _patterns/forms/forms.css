@@ -15,7 +15,8 @@ label {
   color: var(--color-grey-dark);
 }
 
-.input-icon {
+input:not([type="checkbox"]).input-icon,
+input:not([type="radio"]).input-icon {
   background: url("../../images/icon-blank.svg") left / contain no-repeat;
   padding-left: 3rem;
 }
