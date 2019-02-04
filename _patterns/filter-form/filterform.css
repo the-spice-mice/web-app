@@ -33,10 +33,6 @@ select, input {
   color: var(--color-grey-dark);
 }
 
-::-webkit-input-placeholder {
-  padding-left: 35px;
-}
-
 input[type=date] {
   padding-left: 35px;
 }
