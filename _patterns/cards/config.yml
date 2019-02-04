@@ -2,14 +2,17 @@ title: "Cards"
 description: |
   A collection of card options.
 patterns:
-  profile-1:
-    title: "Profile Card 1"
-    width: 350
+  profile-card:
+    title: "Profile Card"
+    width: 400
     padding: 20px
     fields:
       - name: profileImg
         type: string
         example: "profile-hugh.jpg"
+      - name: topSitter
+        type: boolean
+        example: true
       - name: name
         type: string
         example: "Hugh Andrews"
@@ -19,26 +22,49 @@ patterns:
       - name: link
         type: string
         example: "#"
-  profile-2:
-    title: "Profile Card 2"
-    width: 350
-    padding: 20px
-    fields:
-      - name: profileImg
+      - name: rating
         type: string
-        example: "profile-hugh.jpg"
-      - name: name
-        type: string
-        example: "Helen Jones"
-      - name: location
-        type: string
-        example: "Nepean, ON"
+        example: "4"
       - name: bio
         type: string
         example: "Hi! I have been dog sitting for over 5 years and would love to meet your dog!"
-      - name: link
-        type: string
-        example: "#"
+  # profile-1:
+  #   title: "Profile Card 1"
+  #   width: 400
+  #   padding: 20px
+  #   fields:
+  #     - name: profileImg
+  #       type: string
+  #       example: "profile-hugh.jpg"
+  #     - name: name
+  #       type: string
+  #       example: "Hugh Andrews"
+  #     - name: location
+  #       type: string
+  #       example: "Ottawa, ON"
+  #     - name: link
+  #       type: string
+  #       example: "#"
+  # profile-2:
+  #   title: "Profile Card 2"
+  #   width: 400
+  #   padding: 20px
+  #   fields:
+  #     - name: profileImg
+  #       type: string
+  #       example: "profile-hugh.jpg"
+  #     - name: name
+  #       type: string
+  #       example: "Helen Jones"
+  #     - name: location
+  #       type: string
+  #       example: "Nepean, ON"
+  #     - name: bio
+  #       type: string
+  #       example: "Hi! I have been dog sitting for over 5 years and would love to meet your dog!"
+  #     - name: link
+  #       type: string
+  #       example: "#"
   signin:
     title: "Sign In"
     width: 450
