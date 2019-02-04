@@ -1,0 +1,16 @@
+title: "Rating Scale"
+description: |
+  A basic rating scale that can be adjusted in each use.
+patterns:
+  rating:
+    title: "Rating Scale"
+    fields:
+      - name: rating
+        type: string
+        example: "4"
+      - name: color
+        type: string
+        example: "primary"
+      - name: divClass
+        type: string
+        example: "pad-b"
