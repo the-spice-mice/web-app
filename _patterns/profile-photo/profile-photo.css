@@ -1,8 +1,12 @@
 .profile-photo {
   border-radius: 100%;
   overflow: hidden;
-  border: 2px solid var(--color-grey-dark);
+  border-width: 2px;
+  border-style: solid;
   transition: border var(--transition-primary);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .profile-photo-center {
