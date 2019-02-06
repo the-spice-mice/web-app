@@ -2,7 +2,7 @@ button:not(.favourite),
 .btn {
   transition: all .25s;
   padding: .375em 1.5em .42em;
-  border-radius: 100px;
+  border-radius: var(--border-radius);
   text-transform: none;
   background-color: var(--color-primary);
   border-color: var(--color-primary);
