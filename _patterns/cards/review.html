@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="grid island-1-2">
+    <div class="unit [ xs-1 s-1-3 m-1 l-1-4 ] island-1-2">
+      <div class="review-profile-wrap">
+        {% pattern profile-photo/profile-photo profileImg=include.profileImg size="100%" borderColor="var(--color-primary);"%}
+      </div>
+    </div>
+    <div class="unit [ xs-1 s-2-3 m-1 l-3-4 ] island-1-2">
+      <h3>{{include.reviewTitle}}</h3>
+      <p class="">{{include.reviewText | truncate:200 }}</p>
+      <h4 class="push-1-4">Rating:</h4>
+      {% pattern rating/rating rating=include.rating color="primary" iconSize="i-1" %}
+    </div>
+  </div>
+</div>

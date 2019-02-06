@@ -23,11 +23,28 @@ patterns:
         type: string
         example: "#"
       - name: rating
-        type: string
-        example: "4"
+        type: number
+        example: 4
       - name: bio
         type: string
         example: "Hi! I have been dog sitting for over 5 years and would love to meet your dog!"
+  review:
+    title: "Review Card"
+    width: 600
+    padding: 20px
+    fields:
+      - name: profileImg
+        type: string
+        example: "profile-hugh.jpg"
+      - name: rating
+        type: number
+        example: 4
+      - name: reviewTitle
+        type: string
+        example: Best sitter ever!
+      - name: reviewText
+        type: string
+        example: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   # profile-1:
   #   title: "Profile Card 1"
   #   width: 400

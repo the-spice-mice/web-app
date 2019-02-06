@@ -9,7 +9,7 @@
       <div class="card-top-img-content text-center island">
         <h3 class="push-0">{{include.name}}</h3>
         <p class="push-1-2">{{include.location}}</p>
-        {% pattern rating/rating rating=include.rating color="primary" %}
+        {% pattern rating/rating rating=include.rating color="primary" iconSize="i-1" %}
       </div>
     </div>
   </div>
@@ -18,7 +18,7 @@
     <p class="push-1-2 text-center milli">{{include.location}}</p>
     <p class="bio push-0 text-center italic"><q>{{include.bio}}</q></p>
   </div>
-  {% pattern rating/rating rating=include.rating color="primary" divClass="pad-b" %}
+  {% pattern rating/rating rating=include.rating color="primary" divClass="pad-b text-center" iconSize="i-1" %}
   <div class="grid">
     <a class="unit [ xs-1-2 ] text-center pad-t-1-2 pad-b-1-2" href="#">
       <i class="icon i-1 push-r-1-4">
