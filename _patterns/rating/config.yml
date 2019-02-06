@@ -6,11 +6,14 @@ patterns:
     title: "Rating Scale"
     fields:
       - name: rating
-        type: string
-        example: "4"
+        type: number
+        example: 4
       - name: color
         type: string
         example: "primary"
       - name: divClass
         type: string
         example: "pad-b"
+      - name: iconSeize
+        type: string
+        example: "i-1"
