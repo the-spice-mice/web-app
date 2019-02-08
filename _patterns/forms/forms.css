@@ -15,12 +15,6 @@ label {
   color: var(--color-grey-dark);
 }
 
-input:not([type="checkbox"]).input-icon,
-input:not([type="radio"]).input-icon {
-  background: url("../../images/icon-blank.svg") .5rem center / 1.5rem auto no-repeat #fff;
-  padding-left: 2.5rem;
-}
-
 input[type=date] {
   padding-left: 2.5rem;
 }
