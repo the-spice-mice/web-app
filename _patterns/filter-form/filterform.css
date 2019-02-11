@@ -1,0 +1,36 @@
+input:not([type="checkbox"]).calendar,
+input:not([type="radio"]).calendar {
+  background: url("/images/calendar.svg") .5rem center / 1.5rem auto no-repeat #fff;
+  padding-left: 2.5rem;
+}
+
+input:not([type="checkbox"]).location,
+input:not([type="radio"]).location {
+  background: url("/images/location.svg") .5rem center / 1.5rem auto no-repeat #fff;
+  padding-left: 2.5rem;
+}
+
+.filter-form-button {
+  height: calc(1.3rem + .65rem + .65rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .filter-form-button {
+    height: calc(1.4rem + .7rem + .7rem);
+    /* padding: .7rem .7rem; */
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .filter-form-button {
+    height: calc(1.5rem + .75rem + .75rem);
+    /* padding: .75rem .75rem; */
+  }
+
+}
