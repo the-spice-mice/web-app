@@ -1,0 +1,7 @@
+svg {
+  fill: currentColor;
+}
+
+.colour {
+  color: var(--color-secondary-dark);
+}
