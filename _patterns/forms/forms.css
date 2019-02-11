@@ -15,6 +15,10 @@ label {
   color: var(--color-grey-dark);
 }
 
+::placeholder {
+  opacity: 1;
+}
+
 input[type=date] {
   padding-left: 2.5rem;
 }
