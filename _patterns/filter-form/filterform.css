@@ -1,11 +1,11 @@
 input:not([type="checkbox"]).calendar,
 input:not([type="radio"]).calendar {
-  background: url("../../images/icon-blank.svg") .5rem center / 1.5rem auto no-repeat #fff;
+  background: url("../../images/calendar.svg") .5rem center / 1.5rem auto no-repeat #fff;
   padding-left: 2.5rem;
 }
 
 input:not([type="checkbox"]).location,
 input:not([type="radio"]).location {
-  background: url("../../images/icon-blank.svg") .5rem center / 1.5rem auto no-repeat #fff;
+  background: url("../../images/location.svg") .5rem center / 1.5rem auto no-repeat #fff;
   padding-left: 2.5rem;
 }
