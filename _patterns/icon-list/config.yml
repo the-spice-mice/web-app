@@ -32,18 +32,3 @@ patterns:
       - name: apartment
         type: boolean
         example: true
-      - name: city
-        type: boolean
-        example: true
-      - name: sitter
-        type: boolean
-        example: true
-      - name: owner
-        type: boolean
-        example: true
-      - name: dog
-        type: boolean
-        example: true
-      - name: location
-        type: boolean
-        example: true
