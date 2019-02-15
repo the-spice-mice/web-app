@@ -53,7 +53,8 @@ a {
   color: var(--color-primary);
   transition:
     color var(--transition-primary),
-    background-color var(--transition-primary);
+    background-color var(--transition-primary),
+    opacity var(--transition-primary);
 }
 
 a:hover,
