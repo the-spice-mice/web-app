@@ -1,3 +1,5 @@
 // On load
 
-$('.masthead').removeClass('sticky');
+if ($(this).scrollTop() < 50) {
+  $('.masthead').removeClass('sticky')
+}
