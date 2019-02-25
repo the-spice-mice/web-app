@@ -12,9 +12,16 @@
   --font-primary: Raleway, sans-serif;
   --font-secondary: "Open Sans", sans-serif;
 
+  /* @var +transition The default transition for hover states. */
   --transition-primary: .25s ease-in-out;
+
+  /* @var +border-radius The default border radius */
   --border-radius: 8px;
+
+  /* @var +shadow-primary The default shadow that can be used for both box and text shadows. */
   --shadow-primary: 1px 1px 5px rgba(0, 0, 0, .25);
+
+  /* @var +shadow-dark A darker shadow that can be used as a hover state for both box and text shadows. */
   --shadow-dark: 1px 1px 5px rgba(0, 0, 0, .5);
 }
 
@@ -39,7 +46,7 @@ h3 {
   color: var(--color-grey-dark)
 }
 
-/*@utility Apply to create red background header*/
+/*@utility +header-styles Apply to create red background header*/
 .red-header {
   color: #ffffff;
   background-color: var(--color-primary);
@@ -68,109 +75,109 @@ mark {
 
 /* ---------- Color Applications ---------- */
 
-/*@utility Used to apply the primary colour as the background colour */
+/*@utility +background-color Used to apply the primary colour as the background colour */
 
 .bg-primary {
   background-color: var(--color-primary);
 }
 
-/*@utility Used to apply the primary colour as the text colour */
+/*@utility +font-color Used to apply the primary colour as the text colour */
 
 .text-primary {
   color: var(--color-primary);
 }
 
-/*@utility Used to apply the primary-dark colour as the background colour */
+/*@utility +background-color Used to apply the primary-dark colour as the background colour */
 
 .bg-primary-dark {
   background-color: var(--color-primary-dark);
 }
 
-/*@utility Used to apply the primary-dark colour as the text colour */
+/*@utility +font-color Used to apply the primary-dark colour as the text colour */
 
 .text-primary-dark {
   color: var(--color-primary-dark);
 }
 
-/*@utility Used to apply the primary-light colour as the background colour */
+/*@utility +background-color Used to apply the primary-light colour as the background colour */
 
 .bg-primary-light {
   background-color: var(--color-primary-light);
 }
 
-/*@utility Used to apply the primary-light colour as the text colour */
+/*@utility +font-color Used to apply the primary-light colour as the text colour */
 
 .text-primary-light {
   color: var(--color-primary-light);
 }
 
-/*@utility Used to apply the secondary colour as the background colour */
+/*@utility +background-color Used to apply the secondary colour as the background colour */
 
 .bg-secondary {
   background-color: var(--color-secondary);
 }
 
-/*@utility Used to apply the secondary colour as the text colour */
+/*@utility +font-color Used to apply the secondary colour as the text colour */
 
 .text-secondary {
   color: var(--color-secondary);
 }
 
-/*@utility Used to apply the secondary-dark colour as the background colour */
+/*@utility +background-color Used to apply the secondary-dark colour as the background colour */
 
 .bg-secondary-dark {
   background-color: var(--color-secondary-dark);
 }
 
-/*@utility Used to apply the secondary-dark colour as the text colour */
+/*@utility +font-color Used to apply the secondary-dark colour as the text colour */
 
 .text-secondary-dark {
   color: var(--color-secondary-dark);
 }
 
-/*@utility Used to apply the secondary-light colour as the background colour */
+/*@utility +background-color Used to apply the secondary-light colour as the background colour */
 
 .bg-secondary-light {
   background-color: var(--color-secondary-light);
 }
 
-/*@utility Used to apply the secondary-light colour as the text colour */
+/*@utility +font-color Used to apply the secondary-light colour as the text colour */
 
 .text-secondary-light {
   color: var(--color-secondary-light);
 }
 
-/*@utility Used to apply the grey colour as the background colour */
+/*@utility +background-color Used to apply the grey colour as the background colour */
 
 .bg-grey {
   background-color: var(--color-grey);
 }
 
-/*@utility Used to apply the grey colour as the text colour */
+/*@utility +font-color Used to apply the grey colour as the text colour */
 
 .text-grey {
   color: var(--color-grey);
 }
 
-/*@utility Used to apply the grey-dark colour as the background colour */
+/*@utility +background-color Used to apply the grey-dark colour as the background colour */
 
 .bg-grey-dark {
   background-color: var(--color-grey-dark);
 }
 
-/*@utility Used to apply the grey-dark colour as the text colour */
+/*@utility +font-color Used to apply the grey-dark colour as the text colour */
 
 .text-grey-dark {
   color: var(--color-grey-dark);
 }
 
-/*@utility Used to apply the grey-light colour as the background colour */
+/*@utility +background-color Used to apply the grey-light colour as the background colour */
 
 .bg-grey-light {
   background-color: var(--color-grey-light);
 }
 
-/*@utility Used to apply the grey-light colour as the text colour */
+/*@utility +font-color Used to apply the grey-light colour as the text colour */
 
 .text-grey-light {
   color: var(--color-grey-light);
