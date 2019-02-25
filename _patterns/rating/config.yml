@@ -14,6 +14,6 @@ patterns:
       - name: divClass
         type: string
         example: "pad-b"
-      - name: iconSeize
+      - name: iconSize
         type: string
         example: "i-1"
