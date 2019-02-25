@@ -1,0 +1,34 @@
+title: "Icon list"
+description: |
+  A list of icons and icon labels.
+patterns:
+  icon-list:
+    title: "Icon List"
+    fields:
+      - name: yard
+        type: boolean
+        example: true
+      - name: pet-free
+        type: boolean
+        example: true
+      - name: ball
+        type: boolean
+        example: true
+      - name: walk
+        type: boolean
+        example: true
+      - name: food-bowl
+        type: boolean
+        example: true
+      - name: medication
+        type: boolean
+        example: true
+      - name: child-free
+        type: boolean
+        example: true
+      - name: house
+        type: boolean
+        example: true
+      - name: apartment
+        type: boolean
+        example: true
