@@ -1,17 +1,11 @@
-.pagination {
-  display: inline-block;
-}
-
 .pagination a {
   color: black;
-  padding: 8px 16px;
+  padding: .5rem 1rem;
   text-decoration: none;
 }
 
-.current {
+.pagination a.current {
   background-color: var(--color-primary);
-}
-
-.current a {
   color: #fff;
+  border-radius: var(--border-radius);
 }
