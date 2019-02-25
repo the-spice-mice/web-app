@@ -1,0 +1,16 @@
+- profileImg: profile-helen.jpg
+  sitter-name: Helen Jones
+  booking-dates: April 1-2
+  location: Ottawa, ON
+- profileImg: profile-hugh.jpg
+  sitter-name: Hugh Andrews
+  booking-dates: May 20-22
+  location: Nepean, ON
+- profileImg: profile-hugh.jpg
+  sitter-name: Rick Smelt
+  booking-dates: June 23-25
+  location: Stittsville, ON
+- profileImg: profile-helen.jpg
+  sitter-name: Sylvie Laplante
+  booking-dates: April 21-24
+  location: Gatineau, QC
