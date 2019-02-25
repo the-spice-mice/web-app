@@ -2,5 +2,3 @@ title: "Photo Array"
 description: |
   Responsive photo grid for users to share pet-related photos on their profiles.
 patterns:
-  photo-array-selected:
-    height: 400
