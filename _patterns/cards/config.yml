@@ -86,3 +86,21 @@ patterns:
     title: "Sign In"
     width: 450
     padding: 20px
+  my-bookings:
+    width: 400
+    fields:
+      - name: profileImg
+        type: string
+        example: profile-helen.jpg
+      - name: sitter-name
+        type: string
+        example: Helen Jones
+      - name: booking-dates
+        type: string
+        example: April 20 - April 22
+      - name: location
+        type: string
+        example: Ottawa, ON
+      - name: status
+        type: string
+        example: Booking confirmed
