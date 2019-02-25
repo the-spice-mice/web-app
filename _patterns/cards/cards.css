@@ -16,6 +16,10 @@
   box-shadow: var(--shadow-dark);
 }
 
+.card-review {
+  display: flex;
+}
+
 .close-card {
   color: var(--color-grey);
   transition:
@@ -256,6 +260,7 @@
   margin-right: auto;
 }
 
+
 @media only screen and (min-width: 38em) {
 
   .sign-in-wrap {
@@ -265,6 +270,15 @@
   .card:hover .card-top-img,
   .card:focus .card-top-img {
     top: 2.8rem;
+  }
+
+
+  .card-review .grid {
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
   }
 
 }
@@ -278,6 +292,14 @@
   .card:hover .card-top-img,
   .card:focus .card-top-img {
     top: 3rem;
+  }
+
+  .card-review .grid {
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
   }
 
 

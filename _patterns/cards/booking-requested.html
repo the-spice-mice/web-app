@@ -1,0 +1,27 @@
+<div id="card-sign-in" class="card relative">
+  <strong class="red-header inline-block tera gutter-2 pad-t-1-8 pad-b-1-8">Booking Requested</strong>
+  <a class="close-card inline-block pin-tr gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">
+    <i class="icon i-3-4">
+      <svg><use xlink:href="/images/icons.svg#close"></use></svg>
+    </i>
+    <span class="icon-label hidden">Close</span>
+  </a>
+  <div class="gutter">
+    <div class="grid gutter-1-2 pad-t pad-b ">
+      <div class="unit [ xs-1 s-1-3 m-1 l-1-4 ] island-1-2">
+        <div class="review-profile-wrap">
+          {% pattern profile-photo/profile-photo profileImg="profile-helen.jpg" size="100%" %}
+        </div>
+      </div>
+      <div class="unit [ xs-1 s-2-3 m-1 l-3-4 ] island-1-2">
+        <h3 class="push-1-2">Helen Jones</h3>
+        <strong>April 4 — April 6, 2019</strong>
+        <p class="micro push-0">Helen will review your booking request and your dog’s needs and reply within 24 hrs. </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center push">
+    {% pattern buttons/basic text="View My Bookings" %}
+  </div>
+</div>

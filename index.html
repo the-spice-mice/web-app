@@ -10,13 +10,14 @@ layout: default
     </div>
   {% endfor %}
 </div>
-<div class="grid island-1-2">
+<div class="grid grid-stretch island-1-2">
   {% for reviews in site.data.reviews %}
-    <div class="unit [ xs-1 m-1-2 ] island-1-2">
+    <div class="unit [ xs-1 m-1-2 ] unit-content-distribute island-1-2">
       {% pattern cards/review profileImg=reviews.profileImg rating=reviews.rating reviewTitle=reviews.reviewTitle reviewText=reviews.reviewText %}
     </div>
   {% endfor %}
 </div>
+
 <p class="bg-primary max-length island-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <p class="bg-primary max-length island-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <p class="bg-primary max-length island-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -26,6 +27,7 @@ layout: default
 <h2>Sup Homies its ya boi Adam</h2>
 <h2>big holls</h2>
 <h2>Katie loves branches. She is a tree.</h2>
+{% pattern photo-array/photo-array %}
 <div class="sign-in-fade-in">
   <div class="sign-in-wrap open">
     {% pattern cards/signin %}
