@@ -9,5 +9,8 @@ patterns:
         type: string
         example: "Accordion Title"
       - name: text
-        type: string
-        example: "Accordion text"
+        type: markdown
+        example: |
+          ### Accordion text
+
+          Hello there friends!
