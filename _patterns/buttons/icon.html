@@ -1,6 +1,6 @@
-<a class="btn btn-icon" href="#">
+<a class="btn btn-icon {{include.btnSize}}" href="#">
   <i class="icon i-1 push-r-1-4">
-    <svg><use xlink:href="/images/icons.svg#paw"></use></svg>
+    <svg><use xlink:href="/images/icons.svg#{{include.iconType}}"></use></svg>
   </i>
-  <span class="icon-label">{{include.text | default:'Woof Woof' }}</span>
+  <span class="icon-label">{{include.text }}</span>
 </a>

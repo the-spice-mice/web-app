@@ -10,6 +10,10 @@ patterns:
       - name: text
         type: string
         example: "Bark Bark"
+      - name: btnSize
+        type: string
+        example: "mega"
+        required: false
   full:
     title: "Full Width Button"
     description: |
@@ -18,6 +22,10 @@ patterns:
       - name: text
         type: string
         example: "Bark Bark"
+      - name: btnSize
+        type: string
+        example: "mega"
+        required: false
   ghost:
     title: "Ghost Button"
     description: |
@@ -26,6 +34,10 @@ patterns:
       - name: text
         type: string
         example: "Bark Bark"
+      - name: btnSize
+        type: string
+        example: "mega"
+        required: false
   icon:
     title: "Icon Button"
     description: |
@@ -34,6 +46,13 @@ patterns:
       - name: text
         type: string
         example: "Bark Bark"
+      - name: btnSize
+        type: string
+        example: "mega"
+        required: false
+      - name: iconType
+        type: string
+        example: "paw"
   light:
     title: "Light Button"
     description: |
@@ -42,3 +61,7 @@ patterns:
       - name: text
         type: string
         example: "Bark Bark"
+      - name: btnSize
+        type: string
+        example: "mega"
+        required: false
