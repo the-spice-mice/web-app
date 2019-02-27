@@ -3,4 +3,22 @@ description: |
   Responsive photo grid for users to share pet-related photos on their profiles.
 patterns:
   photo-array:
-    height: 400
+    fields:
+      - name: photo1
+        type: string
+        example: https://placehold.it/100x100
+      - name: photo2
+        type: string
+        example: https://placehold.it/200x200
+      - name: photo3
+        type: string
+        example: https://placehold.it/300x300
+      - name: photo4
+        type: string
+        example: https://placehold.it/400x400
+      - name: photo5
+        type: string
+        example: https://placehold.it/500x500
+      - name: photo6
+        type: string
+        example: https://placehold.it/600x600

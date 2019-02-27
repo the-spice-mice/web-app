@@ -1,0 +1,46 @@
+title: "Form"
+description: |
+  A collection of form options.
+patterns:
+  basic-icon:
+    title: "Basic icon"
+    fields:
+      - name: label
+        type: string
+        example: "Basic Input with Icon"
+      - name: placeholder
+        type: string
+        example: "Placeholder"
+  basic:
+    title: "Basic"
+    fields:
+      - name: label
+        type: string
+        example: "Basic Input"
+      - name: placeholder
+        type: string
+        example: "Placeholder"
+  checkbox:
+    title: "Checkbox"
+    fields:
+      - name: label
+        type: string
+        example: "Checkbox"
+  date-picker:
+    title: "Date Picker"
+    fields:
+      - name: label
+        type: string
+        example: "Date Picker"
+  drop-down:
+    title: "Drop Down"
+    fields:
+      - name: label
+        type: string
+        example: "Basic Select Boxes"
+  radio-button:
+    title: "Radio Button"
+    fields:
+      - name: label
+        type: string
+        example: "Radio"

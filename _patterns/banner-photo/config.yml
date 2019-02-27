@@ -1,0 +1,16 @@
+title: "Banner Photo"
+description: |
+  Standard banner with option for filter form.
+patterns:
+  banner-photo:
+    title: "Banner Photo"
+    fields:
+      - name: bannerImg
+        type: string
+        example: /images/banner-photo.jpg
+      - name: headline
+        type: string
+        example: Get connected to a network of quality dog care today!
+      - name: filterform
+        type: boolean
+        example: true

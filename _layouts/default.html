@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
 </head>
-<body>
-  {% pattern header/navbar %}
+<body{% if page.signin == true %} class="signed-in"{% endif %}>
+  {% pattern header/navbar profileImg=page.profileImg pageBanner=page.pageBanner %}
   <main id="main" role="main">
     {{content}}
   </main>
