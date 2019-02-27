@@ -67,6 +67,22 @@
   color: #000;
 }
 
+  .masthead.nav-light .logo a {
+    color: #fff;
+  }
+
+.masthead.nav-light.sticky .nav a,
+.masthead.nav-light.sticky .logo a {
+  color: #000;
+}
+
+.masthead.nav-light .nav a:hover,
+.masthead.nav-light .logo a:hover,
+.masthead.nav-light.sticky .nav a:hover,
+.masthead.nav-light.sticky .logo a:hover {
+  color: var(--color-primary);
+}
+
 .masthead .icon {
   color: var(--color-secondary);
   transition: color var(--transition-primary);
@@ -271,6 +287,10 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: var(--color-grey);
+  }
+
+  .masthead.nav-light .nav a {
+    color: #fff;
   }
 
   .notifications {

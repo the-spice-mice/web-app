@@ -4,8 +4,26 @@
   location: Ottawa, ON
   link: "#"
   rating: 4
-  bio: "Hi! I have been dog sitting for over 5 years and would love to meet your dog!"
+  bio: "Hi! I have been dog sitting for over 5 years and would love to meet your dog! I live in a medium sized, cozy house in a quiet neighbourhood with lots of parks nearby. It is just me and my wife and we have pretty flexible schedules so your dog will receive lot's of attention!"
   favourited: true
+  profileLink: hugh-andrews/
+  amenities:
+    yard: true
+    pet-free: true
+    ball: false
+    walk: false
+    food-bowl: false
+    medication: false
+    child-free: true
+    house: true
+    apartment: false
+  photos:
+    photo1: https://placehold.it/600x600
+    photo2: https://placehold.it/500x500
+    photo3: https://placehold.it/400x400
+    photo4: https://placehold.it/300x300
+    photo5: https://placehold.it/200x200
+    photo6: https://placehold.it/100x100
 - profileImg: profile-helen.jpg
   topSitter: false
   name: Helen Jones
@@ -14,3 +32,21 @@
   rating: 2
   bio: "Hey there! I am a new sitter very excited to meet new dogs and share my love!"
   favourited: false
+  profileLink: helen-jones/
+  amenities:
+    yard: true
+    pet-free: true
+    ball: true
+    walk: false
+    food-bowl: false
+    medication: false
+    child-free: true
+    house: false
+    apartment: true
+  photos:
+    photo1: https://placehold.it/700x700
+    photo2: https://placehold.it/500x500
+    photo3: https://placehold.it/400x400
+    photo4: https://placehold.it/300x300
+    photo5: https://placehold.it/200x200
+    photo6: https://placehold.it/100x100

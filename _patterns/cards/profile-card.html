@@ -16,7 +16,7 @@
   <div class="card-text island">
     <h3 class="push-0 text-center">{{include.name}}</h3>
     <p class="push-1-2 text-center milli">{{include.location}}</p>
-    <p class="bio push-0 text-center italic"><q>{{include.bio}}</q></p>
+    <p class="bio push-0 text-center italic"><q>{{include.bio | truncate: 90 }}</q></p>
   </div>
   {% pattern rating/rating rating=include.rating color="primary" divClass="pad-b text-center" iconSize="i-1" %}
   <div class="grid">
@@ -26,10 +26,10 @@
       </i>
       <span class="icon-label">Book Now</span>
     </a>
-    <a class="unit [ xs-1-2 ] text-center pad-t-1-2 pad-b-1-2" href="#">
+    <a class="unit [ xs-1-2 ] text-center pad-t-1-2 pad-b-1-2" href="{% if include.profileLink %}{{include.profileLink}}{% else %}#{% endif %}">
       <span class="icon-label push-r-1-4">Learn More</span>
       <i class="icon i-1">
-        <svg><use xlink:href="/images/icons.svg#chevron-right"></svg>
+        <svg><use xlink:href="/images/icons.svg#next"></svg>
       </i>
     </a>
   </div>

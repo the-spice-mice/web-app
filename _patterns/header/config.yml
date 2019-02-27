@@ -4,3 +4,10 @@ description: |
 patterns:
   navbar:
     height: 400
+    fields:
+      - name: profileImg
+        type: string
+        example: profile-owner.jpg
+      - name: pageBanner
+        type: boolean
+        example: false
