@@ -57,7 +57,7 @@ $('.card-sign-in').on('click', function(e) {
 
 // Notifications
 
-$('.masthead .profile-icon-wrap').on('click', function (e) {
+$('.masthead .profile-icon-wrap > a').on('click', function (e) {
   e.preventDefault();
   $('.notifications').toggleClass('notifications-open');
   $('.masthead').removeClass('nav-open');
