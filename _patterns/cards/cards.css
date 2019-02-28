@@ -51,12 +51,19 @@
 
 .sign-in-fade-in {
   display: none;
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .sign-in-wrap {
   position: fixed;
   width: 100%;
-  height: calc(100vh - 2.921875rem);
+  height: calc(100vh - 3.635rem);
   background-color: rgba(0, 0, 0, .8);
   bottom: 0;
   left: 0;
@@ -65,28 +72,6 @@
   align-items: center;
   justify-content: center;
 }
-
-.card-profile-1 {
-  padding-top: 150%;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: 100% 60%, cover;
-  background-position: left bottom, center bottom;
-  transition: all var(--transition-primary);
-}
-
-.card-profile-1 h3 {
-  color: #fff;
-}
-
-/* .card-content {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  color: #fff;
-  text-align: center;
-} */
 
 .favourite {
   position: absolute;
@@ -129,34 +114,12 @@
 .favourite.favourited {
   color: var(--color-primary);
 }
-/*
-.card-profile-2 {
-  position: relative;
-  background-color: var(--color-grey-light);
-  border-radius: 7.5px;
-  overflow: hidden;
-  box-shadow: var(--shadow-primary);
-} */
 
 .outline {
   border: 2px solid var(--color-grey);
   border-bottom: 0;
   border-radius: 7.5px 7.5px 0 0;
 }
-/*
-.category {
-  display: inline-block;
-  background-color: var(--color-primary);
-  border-radius: 0 0 7.5px 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-} */
-/*
-.card-profile-2 .profile-img-wrap img {
-  margin-top: -1.75rem;
-} */
 
 .card-profile h3 {
   color: var(--color-primary);
@@ -188,7 +151,6 @@
 .profile-img-wrap {
   padding-top: 8rem;
   margin-top: 1.3rem;
-  /* position: relative; */
 }
 
 .card-top-img {
@@ -196,7 +158,6 @@
   z-index: 10;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  /* top: -3.25rem; */
   top: -2px;
   left: 50%;
   overflow: hidden;
@@ -229,10 +190,6 @@
 .card-top-img-content h3 {
   color: #fff;
 }
-/*
-.card:hover .profile-img-wrap {
-  position: relative;
-} */
 
 .card:hover .card-top-img,
 .card:focus .card-top-img {
@@ -240,13 +197,11 @@
   height: 8rem;
   border-radius: 20rem;
   top: 2.6rem;
-  /* bottom: 0; */
   border-color: var(--color-primary);
 }
 
 .card:hover .card-top-img-content,
 .card:focus .card-top-img-content {
-  /* opacity: 0; */
   bottom: -30rem;
 }
 
@@ -264,7 +219,7 @@
 @media only screen and (min-width: 38em) {
 
   .sign-in-wrap {
-    height: calc(100vh - 46px);
+    height: calc(100vh - 3.9051136364rem);
   }
 
   .card:hover .card-top-img,
@@ -286,7 +241,7 @@
 @media only screen and (min-width: 60em) {
 
   .sign-in-wrap {
-    height: calc(100vh - 2.921875rem);
+    height: calc(100vh - 3.8538461538rem);
   }
 
   .card:hover .card-top-img,

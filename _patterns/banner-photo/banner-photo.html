@@ -6,7 +6,7 @@
       <h1 class="headline {% if include.filterform == false %}pad-t-2 {% endif %}push-2 tenamega">{{include.headline}}</h1>
     {% endif %}
     {% if include.filterform == true %}
-      {% pattern filter-form/filterform %}
+      {% pattern filter-form/filterform link=include.filterFormLink %}
     {% endif %}
   </div>
 </div>

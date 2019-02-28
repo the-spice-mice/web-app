@@ -40,14 +40,26 @@ $('.tog-nav').on('click', function (e) {
 //   $('body').addClass('signed-in');
 // });
 
+// $('.sign-in a').on('click', function (e) {
+//   $('.sign-in-fade-in').fadeIn();
+// });
+//
+// $('.sign-in-fade-in, .card-sign-in .close-card').on('click', function(e) {
+//   // e.preventDefault();
+//   e.stopImmediatePropagation();
+//   $('.sign-in-fade-in').fadeOut();
+// });
+
 $('.sign-in a').on('click', function (e) {
-  $('.sign-in-fade-in').fadeIn();
+  $('.sign-in-fade-in').css('display', 'block');
+  $(".sign-in-fade-in").animate({opacity: "1"}, 250);
 });
 
 $('.sign-in-fade-in, .card-sign-in .close-card').on('click', function(e) {
   // e.preventDefault();
   e.stopImmediatePropagation();
-  $('.sign-in-fade-in').fadeOut();
+  $(".sign-in-fade-in").animate({opacity: "0"}, 250);
+  setTimeout(function() { $('.sign-in-fade-in').css('display', 'none'); }, 250);
 });
 
 $('.card-sign-in').on('click', function(e) {
@@ -57,7 +69,7 @@ $('.card-sign-in').on('click', function(e) {
 
 // Notifications
 
-$('.masthead .profile-icon-wrap').on('click', function (e) {
+$('.masthead .profile-icon-wrap > a').on('click', function (e) {
   e.preventDefault();
   $('.notifications').toggleClass('notifications-open');
   $('.masthead').removeClass('nav-open');

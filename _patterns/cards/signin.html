@@ -1,5 +1,5 @@
 <div id="card-sign-in" class="card card-sign-in relative">
-  <strong class="red-header inline-block tera gutter-2 pad-t-1-8 pad-b-1-8 not-bold">Log In</strong>
+  <h2 class="red-header inline-block giga gutter-2 pad-t-1-8 pad-b-1-8 not-bold push-0">Log In</h2>
   <a class="close-card inline-block pin-tr gutter-1-2 pad-t-1-4 pad-b-1-4" href="#">
     <i class="icon i-3-4">
       <svg><use xlink:href="/images/icons.svg#close"></use></svg>
@@ -7,30 +7,30 @@
     <span class="icon-label hidden">Close</span>
   </a>
   <form class="sign-in-form pad-t gutter">
-    <div class="grid island-1-2">
-      <div class="unit [ xs-1 ] island-1-2 push-1-4">
+    <div class="grid gutter-1-2">
+      <div class="unit [ xs-1 ] gutter-1-2 push-1-4">
         <label class="push-1-4" for="sign-in-email">Email</label>
         <input id="sign-in-email" type="email" name="sign-in-email">
       </div>
-      <div class="unit [ xs-1 ] island-1-2">
+      <div class="unit [ xs-1 ] gutter-1-2">
         <label class="push-1-4" for="sign-in-password">Password</label>
         <input id="sign-in-password" type="password" name="sign-in-password">
       </div>
-      <div class="unit [ xs-1 ] island-1-2">
-        <p class="milli">Not a member? <a href="#">Sign up now.</a></p>
-        <button type="submit">Submit</button>
+      <div class="unit [ xs-1 ] gutter-1-2">
+        <p class="milli push-1-4">Not a member? <a href="#">Sign up now.</a></p>
+        {% pattern buttons/basic text="Submit" btnSize="" %}
       </div>
     </div>
   </form>
   <div class="grid gutter pad-b recent-users">
-    <div class="unit [ xs-1 ] gutter pad-b-1-2 pad-t-1-2">
+    <div class="unit [ xs-1 ] gutter pad-t-1-2">
       <p class="push-0 bold text-grey-dark">Recent users:</p>
     </div>
     <a class="unit [ xs-1 ] gutter pad-b-1-2 pad-t-1-2" href="/owner/">
       <div class="flex-wrap flex-ai-center">
         {% pattern profile-photo/profile-photo wrapClass='push-r' profileImg="profile-owner.jpg" size="3rem" %}
         <div class="flex-grow">
-          <p class="push-0 mega">Janice Steves</p>
+          <p class="push-0">Janice Steves</p>
           <p class="push-0 milli italic">Dog Owner</p>
         </div>
         <i class="icon i-1">
@@ -42,7 +42,7 @@
       <div class="flex-wrap flex-ai-center">
         {% pattern profile-photo/profile-photo wrapClass='push-r' profileImg="profile-hugh.jpg" size="3rem" %}
         <div class="flex-grow">
-          <p class="push-0 mega">Hugh Andrews</p>
+          <p class="push-0">Hugh Andrews</p>
           <p class="push-0 milli italic">Dog Sitter</p>
         </div>
         <i class="icon i-1">

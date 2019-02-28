@@ -10,10 +10,14 @@
 </head>
 <body{% if page.signin == true %} class="signed-in"{% endif %}>
   {% pattern header/navbar profileImg=page.profileImg pageBanner=page.pageBanner %}
+  <div class="sign-in-fade-in">
+    <div class="sign-in-wrap open">
+      {% pattern cards/signin %}
+    </div>
+  </div>
   <main id="main" role="main">
     {{content}}
   </main>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="{{site.baseurl}}/js/main.js"></script>
 </body>
 </html>
