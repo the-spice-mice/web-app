@@ -6,19 +6,19 @@ patterns:
     fields:
       - name: photo1
         type: string
-        example: https://placehold.it/100x100
+        example: /images/house01.jpg
       - name: photo2
         type: string
-        example: https://placehold.it/200x200
+        example: /images/house02.jpg
       - name: photo3
         type: string
-        example: https://placehold.it/300x300
+        example: /images/house03.jpg
       - name: photo4
         type: string
-        example: https://placehold.it/400x400
+        example: /images/house04.jpg
       - name: photo5
         type: string
-        example: https://placehold.it/500x500
+        example: /images/house05.jpg
       - name: photo6
         type: string
-        example: https://placehold.it/600x600
+        example: /images/house06.jpg
