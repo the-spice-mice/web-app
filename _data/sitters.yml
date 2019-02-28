@@ -18,12 +18,12 @@
     house: true
     apartment: false
   photos:
-    photo1: https://placehold.it/600x600
-    photo2: https://placehold.it/500x500
-    photo3: https://placehold.it/400x400
-    photo4: https://placehold.it/300x300
-    photo5: https://placehold.it/200x200
-    photo6: https://placehold.it/100x100
+    photo1: /images/house01.jpg
+    photo2: /images/house02.jpg
+    photo3: /images/house03.jpg
+    photo4: /images/house04.jpg
+    photo5: /images/house05.jpg
+    photo6: /images/house06.jpg
 - profileImg: profile-helen.jpg
   topSitter: false
   name: Helen Jones
@@ -44,9 +44,9 @@
     house: false
     apartment: true
   photos:
-    photo1: https://placehold.it/700x700
-    photo2: https://placehold.it/500x500
-    photo3: https://placehold.it/400x400
-    photo4: https://placehold.it/300x300
-    photo5: https://placehold.it/200x200
-    photo6: https://placehold.it/100x100
+    photo1: /images/house06.jpg
+    photo2: /images/house05.jpg
+    photo3: /images/house04.jpg
+    photo4: /images/house03.jpg
+    photo5: /images/house02.jpg
+    photo6: /images/house01.jpg
