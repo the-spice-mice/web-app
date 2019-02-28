@@ -4,3 +4,7 @@ description: |
 patterns:
   filterform:
     padding: 20px
+    fields:
+      - name: link
+        type: string
+        example: '#'
