@@ -26,7 +26,7 @@
       </i>
       <span class="icon-label">Book Now</span>
     </a>
-    <a class="unit [ xs-1-2 ] text-center pad-t-1-2 pad-b-1-2" href="{% if include.profileLink %}{{include.profileLink}}{% else %}#{% endif %}">
+    <a class="unit [ xs-1-2 ] text-center pad-t-1-2 pad-b-1-2" href="{% if page.url contains 'owner' %}../{% endif %}{% if include.profileLink %}{{include.profileLink}}{% else %}#{% endif %}">
       <span class="icon-label push-r-1-4">Learn More</span>
       <i class="icon i-1">
         <svg><use xlink:href="/images/icons.svg#next"></svg>
