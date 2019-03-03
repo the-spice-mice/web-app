@@ -52,6 +52,9 @@ patterns:
   my-bookings:
     width: 500
     fields:
+      - name: booking-title
+        type: string
+        example: Booking Requested
       - name: profileImg
         type: string
         example: profile-helen.jpg
