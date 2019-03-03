@@ -520,6 +520,11 @@ caption {
   width: 2.6rem;
 }
 
+.i-3 {
+  height: 3.9rem;
+  width: 3.9rem;
+}
+
 select {
   padding: 0 .1625rem;
 }
