@@ -6,28 +6,35 @@
 <div class="pad-t-2 pad-b-2">
   <div id="tab-page-1" class="section-tab-page section-tab-page-active">
     <div class="grid">
-      {% for bookings in site.data.owner-bookings %}
+      {% for bookings in site.data.[include.dataset] %}
+      {% if bookings.status == 'upcoming' %}
       <div class="unit [ xs-1 m-1-2 l-1-2 ] island-1-2">
-        {% pattern cards/my-bookings booking-title=bookings.title profileImg=bookings.profileImg sitter-name=bookings.sitter-name booking-dates=bookings.booking-dates location=bookings.location status="Booking confirmed" %}
+        {% pattern cards/my-bookings booking-title=bookings.title profileImg=bookings.profileImg sitter-name=bookings.sitter-name booking-dates=bookings.booking-dates location=bookings.location status=bookings.bookingstatus %}
       </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
   <div id="tab-page-2" class="section-tab-page section-tab-page-active">
     <div class="grid">
       {% for bookings in site.data.owner-bookings %}
+      {% if bookings.status == 'pending' %}
+
       <div class="unit [ xs-1 m-1-2 l-1-2 ] island-1-2">
-        {% pattern cards/my-bookings booking-title=bookings.title profileImg=bookings.profileImg sitter-name=bookings.sitter-name booking-dates=bookings.booking-dates location=bookings.location status="Booking confirmed" %}
+        {% pattern cards/my-bookings booking-title=bookings.title profileImg=bookings.profileImg sitter-name=bookings.sitter-name booking-dates=bookings.booking-dates location=bookings.location status=bookings.bookingstatus %}
       </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
   <div id="tab-page-3" class="section-tab-page section-tab-page-active">
     <div class="grid">
       {% for bookings in site.data.owner-bookings %}
+      {% if bookings.status == 'past' %}
       <div class="unit [ xs-1 m-1-2 l-1-2 ] island-1-2">
-        {% pattern cards/my-bookings booking-title=bookings.title profileImg=bookings.profileImg sitter-name=bookings.sitter-name booking-dates=bookings.booking-dates location=bookings.location status="Booking confirmed" %}
+        {% pattern cards/my-bookings booking-title=bookings.title profileImg=bookings.profileImg sitter-name=bookings.sitter-name booking-dates=bookings.booking-dates location=bookings.location status=bookings.bookingstatus %}
       </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
