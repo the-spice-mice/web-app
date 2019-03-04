@@ -19,7 +19,6 @@
   location: Orleans, ON
   bookingstatus: Booking confirmed
   status: upcoming
-
 - title: Booking Requested
   profileImg: profile-kennedy.jpg
   sitter-name: Kennedy McDougall
@@ -34,8 +33,6 @@
   location: Nepean, ON
   bookingstatus: Booking requested
   status: pending
-
-
 - title: Booking Done
   profileImg: profile-helen.jpg
   sitter-name: Helen Jones
