@@ -4,7 +4,7 @@
   location: Ottawa, ON
   link: "#"
   rating: 4
-  bio: "Hi! I have been dog sitting for over 5 years and would love to meet your dog! I live in a medium sized, cozy house in a quiet neighbourhood with lots of parks nearby. It is just me and my wife and we have pretty flexible schedules so your dog will receive lot's of attention!"
+  bio: "Hi! I have been dog sitting for over 5 years and would love to meet your dog! I live in a medium sized, cozy house in a quiet neighbourhood with lots of parks nearby. It is just me and my wife and we have pretty flexible schedules so your dog will receive lots of attention!"
   favourited: true
   profileLink: hugh-andrews/
   amenities:
@@ -38,6 +38,110 @@
     pet-free: true
     ball: true
     walk: false
+    food-bowl: false
+    medication: false
+    child-free: true
+    house: false
+    apartment: true
+  photos:
+    photo1: /images/house06.jpg
+    photo2: /images/house05.jpg
+    photo3: /images/house04.jpg
+    photo4: /images/house03.jpg
+    photo5: /images/house02.jpg
+    photo6: /images/house01.jpg
+- profileImg: profile-meghan.jpg
+  topSitter: false
+  name: Meghan Davis
+  location: Kanata, ON
+  link: "#"
+  rating: 1
+  bio: "Hi everyone! I love dogs so much and I would love to spend time with yours! I live in a roomy house with my family's dog Geoff. He is high energy and loves to play outside with other dogs."
+  favourited: false
+  profileLink: meghan-luvs-pandas/
+  amenities:
+    yard: true
+    pet-free: false
+    ball: true
+    walk: false
+    food-bowl: false
+    medication: false
+    child-free: false
+    house: true
+    apartment: false
+  photos:
+    photo1: /images/house06.jpg
+    photo2: /images/house05.jpg
+    photo3: /images/house04.jpg
+    photo4: /images/house03.jpg
+    photo5: /images/house02.jpg
+    photo6: /images/house01.jpg
+- profileImg: profile-jason.jpg
+  topSitter: true
+  name: Jason Nicholls
+  location: Nepean, ON
+  link: "#"
+  rating: 4
+  bio: "If you let me walk your dog I will give you $5"
+  favourited: true
+  profileLink: jason-nicholls/
+  amenities:
+    yard: true
+    pet-free: false
+    ball: true
+    walk: true
+    food-bowl: true
+    medication: true
+    child-free: false
+    house: false
+    apartment: true
+  photos:
+    photo1: /images/house06.jpg
+    photo2: /images/house05.jpg
+    photo3: /images/house04.jpg
+    photo4: /images/house03.jpg
+    photo5: /images/house02.jpg
+    photo6: /images/house01.jpg
+- profileImg: profile-juliet.jpg
+  topSitter: false
+  name: Juliet Davis
+  location: Ottawa, ON
+  link: "#"
+  rating: 5
+  bio: "Hi! I'm Juliet and I would love to dog-sit for you! I am a registered groomer so I have lots of experience in handling animals. Send me a message, I can't wait to meet your dog!"
+  favourited: true
+  profileLink: juliet-davis/
+  amenities:
+    yard: true
+    pet-free: true
+    ball: true
+    walk: false
+    food-bowl: false
+    medication: false
+    child-free: true
+    house: false
+    apartment: true
+  photos:
+    photo1: /images/house06.jpg
+    photo2: /images/house05.jpg
+    photo3: /images/house04.jpg
+    photo4: /images/house03.jpg
+    photo5: /images/house02.jpg
+    photo6: /images/house01.jpg
+- profileImg: profile-kennedy.jpg
+  topSitter: false
+  name: Kennedy McDougall
+  location: Nepean, ON
+  link: "#"
+  rating: 2
+  bio: "I am passionate about dogs – big or small. Book with me and know that you are getting the highest quaity of experience for your pet (which means lots of treats)"
+  favourited: false
+  profileLink: kennedy-mcdougall/
+  amenities:
+    yard: true
+    pet-free: false
+    ball: true
+    walk: true
     food-bowl: false
     medication: false
     child-free: true
