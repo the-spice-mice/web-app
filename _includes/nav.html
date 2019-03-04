@@ -1,4 +1,4 @@
-<nav class="{{include.navClass}}">
+<nav class="{{include.navClass}}" role="navigation" {% if include.navId %}id="{{include.navId}}"{% endif %}>
   <ul class="{{include.ulClass}}">
     <li class="{{include.liClass}}">
       <a class="{{include.aClass}}" href="/">Home</a>
