@@ -49,7 +49,7 @@
 
 .masthead {
   position: fixed;
-  z-index: 10000;
+  z-index: 9999;
   width: 100%;
   transition:
     background-color var(--transition-primary),
