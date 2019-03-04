@@ -1,0 +1,16 @@
+---
+layout: default
+profileImg: profile-sitter.jpg
+signin: true
+---
+
+<section class="wrapper pad-t-2 pad-b-2 gutter " tabindex="0">
+  <div class=" pad-t-2 pad-b-2">
+    <div class="">
+      <h2 class="push-0">My Bookings</h2>
+    </div>
+    <div class="pad-b-2 pad-t-2">
+      {% pattern tabs/tab-bar dataset='sitter-bookings' %}
+    </div>
+  </div>
+</section>

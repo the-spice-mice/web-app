@@ -5,3 +5,15 @@ theme: jekyll_patternbot
 patternbot:
   title: "Sleep Rover"
   font_url: "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Raleway:400,400i,700,700i"
+
+defaults:
+  - scope:
+      path: owner
+    values:
+      profileImg: profile-owner.jpg
+      signin: true
+  - scope:
+      path: sitters
+    values:
+      profileImg: profile-hugh.jpg
+      signin: true
