@@ -9,6 +9,10 @@
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
 </head>
 <body{% if page.signin == true %} class="signed-in"{% endif %}>
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
   {% pattern header/navbar profileImg=page.profileImg pageBanner=page.pageBanner %}
   <div class="sign-in-fade-in">
     <div class="sign-in-wrap open">
@@ -19,5 +23,8 @@
     {{content}}
   </main>
   <script src="{{site.baseurl}}/js/main.js"></script>
+  <small>
+    {% pattern footer/footer %}
+  <small>
 </body>
 </html>
