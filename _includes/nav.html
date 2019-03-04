@@ -4,7 +4,7 @@
       <a class="{{include.aClass}}" href="/">Home</a>
     </li>
     <li class="{{include.liClass}}">
-      <a class="{{include.aClass}}" href="/bookings">My Bookings</a>
+      <a class="{{include.aClass}}" href="{% if page.url contains 'owner' %}/owner{% endif %}/my-bookings">My Bookings</a>
     </li>
     <li class="{{include.liClass}}">
       <a class="{{include.aClass}}" href="/about">About</a>
