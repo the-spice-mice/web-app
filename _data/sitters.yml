@@ -82,7 +82,7 @@
   location: Nepean, ON
   link: "#"
   rating: 4
-  bio: "If you let me walk your dog I will give you $5"
+  bio: "If you let me walk your dog I will give you $5. I will need you to provide me that $5 first though. Possibly more if you're feeling generous."
   favourited: true
   profileLink: jason-nicholls/
   amenities:
@@ -103,7 +103,7 @@
     photo5: /images/house02.jpg
     photo6: /images/house01.jpg
 - profileImg: profile-juliet.jpg
-  topSitter: false
+  topSitter: true
   name: Juliet Davis
   location: Ottawa, ON
   link: "#"
