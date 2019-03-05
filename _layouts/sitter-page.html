@@ -2,6 +2,11 @@
 layout: default
 ---
 {% assign sitterInfo=site.data.sitters.[page.sitterData] %}
+<div class="request-fade-in">
+  <div class="request-wrap full-height open">
+    {% pattern cards/booking-requested profileImg=sitterInfo.profileImg sitter-name=sitterInfo.name booking-dates="April 4 — April 6, 2019" %}
+  </div>
+</div>
 <section class="pad-t-2 pad-b-2 profile-base-info" tabindex="0">
   <div class="pad-t-2">
     <div class="wrapper grid gutter">
@@ -21,7 +26,7 @@ layout: default
             <span class="icon-label">{{sitterInfo.location}}</span>
           </div>
           <div class="push-2">
-            {% pattern buttons/basic text="Book now!" btnSize="mega" %}
+            {% pattern buttons/basic text="Book now!" btnSize="mega booking-request" %}
           </div>
           <h2 class="push-1-2">Rating</h2>
           {% pattern rating/rating rating=sitterInfo.rating color="primary" iconSize="i-1-1-2" %}

@@ -1,4 +1,4 @@
-<div class="card">
+<a class="card block" href="{% if page.url contains 'owner' %}/owner{% endif %}{{include.link}}">
   <strong class="red-header inline-block tera gutter-2 pad-t-1-8 pad-b-1-8 not-bold">{{include.booking-title}}</strong>
   <div class="gutter">
     <div class="grid island-1-2">
@@ -36,5 +36,4 @@
       </div>
     </div>
   </div>
-
-</div>
+</a>

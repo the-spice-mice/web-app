@@ -5,6 +5,7 @@
   location: Ottawa, ON
   bookingstatus: Booking confirmed
   status: upcoming
+  link: /hugh-andrews
 - title: Booking Upcoming
   profileImg: profile-kennedy.jpg
   sitter-name: Kennedy McDougall
@@ -12,7 +13,7 @@
   location: Orleans, ON
   bookingstatus: Booking confirmed
   status: upcoming
-
+  link: /kennedy-mcdougall
 - title: Booking Requested
   profileImg: profile-hugh.jpg
   sitter-name: Hugh Andrews
@@ -20,7 +21,7 @@
   location: Nepean, ON
   bookingstatus: Booking requested
   status: pending
-
+  link: /hugh-andrews
 - title: Booking Done
   profileImg: profile-meghan.jpg
   sitter-name: Meghan Davis
@@ -28,6 +29,7 @@
   location: Ottawa, ON
   bookingstatus: Booking done
   status: past
+  link: /meghan-davis
 - title: Booking Done
   profileImg: profile-kennedy.jpg
   sitter-name: Kennedy McDougall
@@ -35,3 +37,4 @@
   location: Ottawa, ON
   bookingstatus: Booking done
   status: past
+  link: /kennedy-mcdougall
