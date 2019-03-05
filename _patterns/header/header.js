@@ -50,7 +50,8 @@ $('.tog-nav').on('click', function (e) {
 //   $('.sign-in-fade-in').fadeOut();
 // });
 
-$('.sign-in a').on('click', function (e) {
+$('.sign-in a, .force-login').on('click', function (e) {
+  e.preventDefault();
   $('.sign-in-fade-in').css('display', 'block');
   $(".sign-in-fade-in").animate({opacity: "1"}, 250);
 });
@@ -66,6 +67,16 @@ $('.card-sign-in').on('click', function(e) {
   e.stopImmediatePropagation();
 });
 
+$(function() {
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        $('.sign-in-wrap').removeClass('full-height')
+      }
+      if ($(this).scrollTop() < 50) {
+        $('.sign-in-wrap').addClass('full-height')
+      }
+   });
+});
 
 // Notifications
 
@@ -81,4 +92,5 @@ $('.unread').on('click', function () {
 
 $('.notifications-list a').hover(function () {
   $(this).removeClass('unseen');
+  $('.title-alert').fadeOut();
 });

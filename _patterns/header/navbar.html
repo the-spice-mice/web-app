@@ -11,7 +11,7 @@
       </h1>
     {% else %}
       <strong class="block logo tera">
-        <a class="icon-link inline-block" href="/">
+        <a class="icon-link inline-block" href="{% if page.url contains 'owner' %}/owner{% endif %}/">
           <i class="icon i-2 push-1-4 push-r-1-8">
             <svg><use xlink:href="/images/icons.svg#logo"></use></svg>
           </i>
@@ -24,7 +24,7 @@
       <a class="" href="#card-sign-in">Sign In</a>
     </div>
     <div class="profile-icon-wrap">
-      <a class="relative inline-block unread" href="#">
+      <a class="relative inline-block{% if page.url contains 'sitter' %} unread{% endif %}" href="#">
         {% pattern profile-photo/profile-photo profileImg=include.profileImg size="2rem" %}
         <div class="profile-alert inline-block micro island-1-8">
           <span class="pin-c">1</span>
@@ -33,19 +33,19 @@
       <div class="notifications">
         <ul class="list-group pad-t-1-2 pad-b-1-2 push-0 milli">
           <li>
-            <a class="block gutter pad-t-1-2 pad-b-1-2" href="#">Profile</a>
+            <a class="block gutter pad-t-1-2 pad-b-1-2" href="{% if page.url contains 'sitter' %}/hugh-andrews{% else %}#{% endif %}">Profile</a>
           </li>
           <li class="pad-b-1-2">
             <a class="block gutter pad-t-1-2 pad-b-1-2" href="/">Log Out</a>
           </li>
           <li>
-            <p class="push-0 gutter pad-t pad-b-1-2 notifications-title"><span class="bold inline-block push-r-1-4">Notifications</span>{% if page.url contains 'owner' %}<span class="title-alert">1</span>{% endif %}</p>
+            <p class="push-0 gutter pad-t pad-b-1-2 notifications-title"><span class="bold inline-block push-r-1-4">Notifications</span>{% if page.url contains 'sitter' %}<span class="title-alert">1</span>{% endif %}</p>
             <ol class="list-group notifications-list push-0">
               <li>
-                {% if page.url contains 'owner' %}
-                  <a class="block gutter pad-t-1-2 pad-b-1-2 unseen" href="#">New booking request from AJ</a>
+                {% if page.url contains 'sitter' %}
+                  <a class="block gutter pad-t-1-2 pad-b-1-2 unseen" href="#">Booking request from Janice</a>
                 {% else %}
-                  No new notifications.
+                  <p class="gutter push-0">No new notifications.</p>
                 {% endif %}
               </li>
             </ol>

@@ -13,7 +13,7 @@ defaults:
       profileImg: profile-owner.jpg
       signin: true
   - scope:
-      path: sitters
+      path: sitter
     values:
       profileImg: profile-hugh.jpg
       signin: true
