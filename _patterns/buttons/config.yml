@@ -10,6 +10,9 @@ patterns:
       - name: text
         type: string
         example: "Bark Bark"
+      - name: link
+        type: string
+        example: '#'
       - name: btnSize
         type: string
         example: "mega"
@@ -22,6 +25,9 @@ patterns:
       - name: text
         type: string
         example: "Bark Bark"
+      - name: link
+        type: string
+        example: '#'
       - name: btnSize
         type: string
         example: "mega"
@@ -34,6 +40,9 @@ patterns:
       - name: text
         type: string
         example: "Bark Bark"
+      - name: link
+        type: string
+        example: '#'
       - name: btnSize
         type: string
         example: "mega"
@@ -46,13 +55,16 @@ patterns:
       - name: text
         type: string
         example: "Bark Bark"
+      - name: link
+        type: string
+        example: '#'
+      - name: iconType
+        type: string
+        example: "paw"
       - name: btnSize
         type: string
         example: "mega"
         required: false
-      - name: iconType
-        type: string
-        example: "paw"
   light:
     title: "Light Button"
     description: |
@@ -61,6 +73,9 @@ patterns:
       - name: text
         type: string
         example: "Bark Bark"
+      - name: link
+        type: string
+        example: '#'
       - name: btnSize
         type: string
         example: "mega"

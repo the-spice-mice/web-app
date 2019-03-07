@@ -49,6 +49,31 @@ $('.photo-array-focused-next').on('click', function (e) {
   }
 });
 
+window.addEventListener('keydown', function(e) {
+  if (e.keyCode == 39) {
+    switch ($('.photo-array-image').attr('src')) {
+      case photoArray1:
+        $('.photo-array-image').attr('src', photoArray2);
+        break;
+      case photoArray2:
+        $('.photo-array-image').attr('src', photoArray3);
+        break;
+      case photoArray3:
+        $('.photo-array-image').attr('src', photoArray4);
+        break;
+      case photoArray4:
+        $('.photo-array-image').attr('src', photoArray5);
+        break;
+      case photoArray5:
+        $('.photo-array-image').attr('src', photoArray6);
+        break;
+      case photoArray6:
+        $('.photo-array-image').attr('src', photoArray1);
+        break;
+    }
+  }
+});
+
 $('.photo-array-focused-previous').on('click', function (e) {
   console.log('clicked');
   e.stopImmediatePropagation();
@@ -72,5 +97,32 @@ $('.photo-array-focused-previous').on('click', function (e) {
     case photoArray6:
       $('.photo-array-image').attr('src', photoArray5);
       break;
+  }
+});
+
+window.addEventListener('keydown', function(e) {
+  if (e.keyCode == 37) {
+    e.stopImmediatePropagation();
+    e.preventDefault();
+    switch ($('.photo-array-image').attr('src')) {
+      case photoArray1:
+        $('.photo-array-image').attr('src', photoArray6);
+        break;
+      case photoArray2:
+        $('.photo-array-image').attr('src', photoArray1);
+        break;
+      case photoArray3:
+        $('.photo-array-image').attr('src', photoArray2);
+        break;
+      case photoArray4:
+        $('.photo-array-image').attr('src', photoArray3);
+        break;
+      case photoArray5:
+        $('.photo-array-image').attr('src', photoArray4);
+        break;
+      case photoArray6:
+        $('.photo-array-image').attr('src', photoArray5);
+        break;
+    }
   }
 });
