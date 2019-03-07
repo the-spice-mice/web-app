@@ -5,3 +5,24 @@ signin: true
 pageBanner: true
 ---
 {% pattern banner-photo/banner-photo bannerImg="/images/banner-photo.jpg" headline="Get connected to a network of quality dog care today!" filterform=true filterFormLink="search-results/" %}
+
+<div class="pad-t-2 wrapper">
+  <div class="gutter"><h2 class="pad-t-2 push-1-2">Browse Sitters in your Area</h2></div>
+  <div class="grid island-1-2">
+    {% for sitters in site.data.sitters limit:3 %}
+    <div class="unit [ xs-1 m-1-2 l-1-3 ] island-1-2">
+      {% pattern cards/profile-card profileImg=sitters.profileImg topSitter=sitters.topSitter name=sitters.name location=sitters.location link=sitters.link rating=sitters.rating bio=sitters.bio favourited=sitters.favourited profileLink=sitters.profileLink %}
+    </div>
+    {% endfor %}
+  </div>
+  <div class="gutter"><h2 class="pad-t-2 push-1-2">Favourite Sitters</h2></div>
+  <div class="grid island-1-2 push-2">
+    {% for sitters in site.data.sitters %}
+    {% if sitters.favourited %}
+      <div class="unit [ xs-1 m-1-2 l-1-3 ] island-1-2">
+        {% pattern cards/profile-card profileImg=sitters.profileImg topSitter=sitters.topSitter name=sitters.name location=sitters.location link=sitters.link rating=sitters.rating bio=sitters.bio favourited=sitters.favourited profileLink=sitters.profileLink %}
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
