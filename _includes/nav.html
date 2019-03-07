@@ -1,13 +1,13 @@
-<nav class="{{include.navClass}}">
+<nav class="{{include.navClass}}" role="navigation" {% if include.navId %}id="{{include.navId}}"{% endif %}>
   <ul class="{{include.ulClass}}">
     <li class="{{include.liClass}}">
-      <a class="{{include.aClass}}" href="/">Home</a>
+      <a class="{{include.aClass}}" href="{% if page.url contains 'owner' %}/owner{% endif %}/">Home</a>
     </li>
     <li class="{{include.liClass}}">
-      <a class="{{include.aClass}}" href="{% if page.url contains 'owner' %}/owner{% endif %}/my-bookings">My Bookings</a>
+      <a class="{{include.aClass}}{% unless page.signin %} force-login{% endunless %}" href="{% if page.url contains 'owner' %}/owner/my-bookings{% elsif page.url contains 'sitter' %}/sitter{% else %}/my-bookings{% endif %}">My Bookings</a>
     </li>
     <li class="{{include.liClass}}">
-      <a class="{{include.aClass}}" href="/about">About</a>
+      <a class="{{include.aClass}}" href="{% if page.url contains 'owner' %}/owner{% endif %}{% if page.url contains 'sitter' %}/sitter{% endif %}/about">About</a>
     </li>
   </ul>
 </nav>

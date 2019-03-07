@@ -62,7 +62,7 @@
 @media only screen and (min-width: 60em) {
 
   .accordion-label.open + .accordion-content {
-    max-height: 6rem;
+    max-height: 9rem;
   }
 
 }

@@ -1,20 +1,72 @@
-- title: Booking Requested
+- title: Booking Upcoming
   profileImg: profile-helen.jpg
   sitter-name: Helen Jones
   booking-dates: April 1-2
   location: Ottawa, ON
+  bookingstatus: Booking confirmed
+  status: upcoming
+  link: /helen-jones
+- title: Booking Upcoming
+  profileImg: profile-meghan.jpg
+  sitter-name: Meghan Davis
+  booking-dates: March 23-26
+  location: Ottawa, ON
+  bookingstatus: Booking confirmed
+  status: upcoming
+  link: /meghan-davis
+- title: Booking Upcoming
+  profileImg: profile-juliet.jpg
+  sitter-name: Juliet Davis
+  booking-dates: March 18-26
+  location: Orleans, ON
+  bookingstatus: Booking confirmed
+  status: upcoming
+  link: /juliet-davis
+- title: Booking Requested
+  profileImg: profile-kennedy.jpg
+  sitter-name: Kennedy McDougall
+  booking-dates: April 1-5
+  location: Rockland, ON
+  bookingstatus: Booking requested
+  status: pending
+  link: /kennedy-mcdougall
 - title: Booking Requested
   profileImg: profile-hugh.jpg
   sitter-name: Hugh Andrews
   booking-dates: May 20-22
   location: Nepean, ON
-- title: Booking Requested
-  profileImg: profile-hugh.jpg
-  sitter-name: Rick Smelt
-  booking-dates: June 23-25
-  location: Stittsville, ON
-- title: Booking Requested
+  bookingstatus: Booking requested
+  status: pending
+  link: /hugh-andrews
+- title: Booking Done
   profileImg: profile-helen.jpg
-  sitter-name: Sylvie Laplante
-  booking-dates: April 21-24
-  location: Gatineau, QC
+  sitter-name: Helen Jones
+  booking-dates: Feb 23-25
+  location: Stittsville, ON
+  bookingstatus: Booking done
+  status: past
+  link: /helen-jones
+- title: Booking Done
+  profileImg: profile-kennedy.jpg
+  sitter-name: Kennedy McDougall
+  booking-dates: January 1-5
+  location: Rockland, ON
+  bookingstatus: Booking done
+  status: past
+  link: /kennedy-mcdougall
+- title: Booking Done
+  profileImg: profile-meghan.jpg
+  sitter-name: Meghan Davis
+  booking-dates: April 1-5
+  location: Ottawa, ON
+  bookingstatus: Booking done
+  status: past
+  link: /megan-davis
+- title: Booking Done
+  profileImg: profile-kennedy.jpg
+  sitter-name: Kennedy McDougall
+  booking-dates: October 19-20
+  location: Ottawa, ON
+  bookingstatus: Booking done
+  status: past
+  link: /kennedy-mcdougall

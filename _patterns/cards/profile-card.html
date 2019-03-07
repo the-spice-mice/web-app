@@ -1,4 +1,4 @@
-<div class="card card-profile">
+<div class="card card-profile" tabindex="0">
   {% if include.topSitter == true %}
     <span class="red-header gutter pad-t-1-8 pad-b-1-8 milli inline-block relative">Top Sitter</span>
   {% else %}
@@ -13,6 +13,12 @@
       </div>
     </div>
   </div>
+  <button class="favourite {% if include.favourited == true %}favourited{% endif %}" href="#">
+    <i class="icon i-1">
+      <svg><use xlink:href="/images/icons.svg/#heart-lines"></svg>
+      <svg><use xlink:href="/images/icons.svg/#heart"></svg>
+    </i>
+  </button>
   <div class="card-text island">
     <h3 class="push-0 text-center">{{include.name}}</h3>
     <p class="push-1-2 text-center milli">{{include.location}}</p>
@@ -33,10 +39,4 @@
       </i>
     </a>
   </div>
-  <button class="favourite {% if include.favourited == true %}favourited{% endif %}" href="#">
-    <i class="icon i-1">
-      <svg><use xlink:href="/images/icons.svg/#heart-lines"></svg>
-      <svg><use xlink:href="/images/icons.svg/#heart"></svg>
-    </i>
-  </button>
 </div>

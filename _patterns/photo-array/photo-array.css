@@ -13,6 +13,7 @@
   left: 0;
   display: none;
   z-index: 500;
+  transition: height var(--transition-primary);
 }
 
 .photo-array-image {

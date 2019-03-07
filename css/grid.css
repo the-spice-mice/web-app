@@ -1,6 +1,6 @@
 /*
   Gridifier || Code released under the UNLICENSE
-  https://gridifier.web-dev.tools/#xs,4,0,0,0;s,4,25,0,0;m,4,38,1,1;l,4,60,1,1
+  https://gridifier.web-dev.tools/#xs,4,0,0,0;s,4,25,0,0;m,4,38,1,1;ml,4,45,1,1;l,4,60,1,1
 */
 
 .grid {
@@ -599,6 +599,214 @@
   }
 
   .m-content-shrink {
+    -ms-align-self: center;
+    -webkit-align-self: center;
+    align-self: center;
+  }
+
+}
+
+@media only screen and (min-width: 45em) {
+
+  .unit-ml-hidden,
+  .ml-0 {
+    display: none;
+    visibility: hidden;
+  }
+
+  .unit-ml-centered {
+    margin: 0 auto;
+  }
+
+  .unit-ml-1,
+  .ml-1 {
+    display: block;
+    visibility: visible;
+    width: 100%;
+  }
+
+  .unit-offset-ml-0 {
+    margin-left: 0;
+  }
+
+  .unit-push-ml-0,
+  .unit-pull-ml-0 {
+    left: 0;
+  }
+
+  .unit-ml-1-2,
+  .ml-1-2 {
+    width: 50%;
+  }
+
+  .unit-offset-ml-1-2 {
+    margin-left: 50%;
+  }
+
+  .unit-push-ml-1-2 {
+    left: 50%;
+  }
+
+  .unit-pull-ml-1-2 {
+    left: -50%;
+  }
+
+  .unit-ml-1-3,
+  .ml-1-3 {
+    width: 33.3333%;
+  }
+
+  .unit-offset-ml-1-3 {
+    margin-left: 33.3333%;
+  }
+
+  .unit-push-ml-1-3 {
+    left: 33.3333%;
+  }
+
+  .unit-pull-ml-1-3 {
+    left: -33.3333%;
+  }
+
+  .unit-ml-2-3,
+  .ml-2-3 {
+    width: 66.6667%;
+  }
+
+  .unit-offset-ml-2-3 {
+    margin-left: 66.6667%;
+  }
+
+  .unit-push-ml-2-3 {
+    left: 66.6667%;
+  }
+
+  .unit-pull-ml-2-3 {
+    left: -66.6667%;
+  }
+
+  .unit-ml-1-4,
+  .ml-1-4 {
+    width: 25%;
+  }
+
+  .unit-offset-ml-1-4 {
+    margin-left: 25%;
+  }
+
+  .unit-push-ml-1-4 {
+    left: 25%;
+  }
+
+  .unit-pull-ml-1-4 {
+    left: -25%;
+  }
+
+  .unit-ml-3-4,
+  .ml-3-4 {
+    width: 75%;
+  }
+
+  .unit-offset-ml-3-4 {
+    margin-left: 75%;
+  }
+
+  .unit-push-ml-3-4 {
+    left: 75%;
+  }
+
+  .unit-pull-ml-3-4 {
+    left: -75%;
+  }
+
+  .unit-ml-1-2,
+  .ml-1-2,
+  .unit-ml-1-3,
+  .ml-1-3,
+  .unit-ml-2-3,
+  .ml-2-3,
+  .unit-ml-1-4,
+  .ml-1-4,
+  .unit-ml-3-4,
+  .ml-3-4 {
+    display: inline-block;
+    visibility: visible;
+  }
+
+  .unit-ml-1-2[class*="-content-"],
+  .ml-1-2[class*="-content-"],
+  .unit-ml-1-3[class*="-content-"],
+  .ml-1-3[class*="-content-"],
+  .unit-ml-2-3[class*="-content-"],
+  .ml-2-3[class*="-content-"],
+  .unit-ml-1-4[class*="-content-"],
+  .ml-1-4[class*="-content-"],
+  .unit-ml-3-4[class*="-content-"],
+  .ml-3-4[class*="-content-"] {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .unit-ml-content-distribute,
+  .ml-content-distribute {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  .unit-ml-content-center,
+  .unit-ml-content-center-vertical {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-flex-direction: column wrap;
+    -ms-flex-direction: column wrap;
+    flex-flow: column wrap;
+  }
+
+  .unit-ml-content-center-horizontal {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-flex-direction: row wrap;
+    -ms-flex-direction: row wrap;
+    flex-flow: row wrap;
+  }
+
+  .ml-content-fill,
+  .ml-content-stretch {
+    -ms-flex-grow: 2;
+    -webkit-flex-grow: 2;
+    flex-grow: 2;
+    max-width: 100%; /* @bugfix: IE 10, 11 */
+  }
+
+  .ml-content-shrink {
     -ms-align-self: center;
     -webkit-align-self: center;
     align-self: center;

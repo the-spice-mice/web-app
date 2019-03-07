@@ -1,4 +1,4 @@
-<a class="btn btn-icon {{include.btnSize}}" href="#">
+<a class="btn btn-icon {{include.btnSize}}" href="{% if include.link %}{{include.link}}{% else %}#{% endif %}">
   <i class="icon i-1 push-r-1-4">
     <svg><use xlink:href="/images/icons.svg#{{include.iconType}}"></use></svg>
   </i>

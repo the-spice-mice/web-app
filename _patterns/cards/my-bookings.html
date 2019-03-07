@@ -1,4 +1,4 @@
-<div class="card">
+<a class="card block" href="{% if page.url contains 'owner' %}/owner{% endif %}{{include.link}}">
   <strong class="red-header inline-block tera gutter-2 pad-t-1-8 pad-b-1-8 not-bold">{{include.booking-title}}</strong>
   <div class="gutter">
     <div class="grid island-1-2">
@@ -30,11 +30,10 @@
             <i class="icon i-1 push-r-1-4">
               <svg><use xlink:href="/images/icons.svg#paw-lines" /></svg>
             </i>
-            <span class="icon-label">{{include.status}}</span>
+            <span class="icon-label bold">{{include.status}}</span>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-</div>
+</a>

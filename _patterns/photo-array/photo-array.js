@@ -22,8 +22,6 @@ var photoArray3 = $('[href="#photo-array-3"] img').attr('src');
 var photoArray4 = $('[href="#photo-array-4"] img').attr('src');
 var photoArray5 = $('[href="#photo-array-5"] img').attr('src');
 var photoArray6 = $('[href="#photo-array-6"] img').attr('src');
-var photoArray7 = $('[href="#photo-array-7"] img').attr('src');
-var photoArray8 = $('[href="#photo-array-8"] img').attr('src');
 
 $('.photo-array-focused-next').on('click', function (e) {
   console.log('clicked');
@@ -46,14 +44,33 @@ $('.photo-array-focused-next').on('click', function (e) {
       $('.photo-array-image').attr('src', photoArray6);
       break;
     case photoArray6:
-      $('.photo-array-image').attr('src', photoArray7);
-      break;
-    case photoArray7:
-      $('.photo-array-image').attr('src', photoArray8);
-      break;
-    case photoArray8:
       $('.photo-array-image').attr('src', photoArray1);
       break;
+  }
+});
+
+window.addEventListener('keydown', function(e) {
+  if (e.keyCode == 39) {
+    switch ($('.photo-array-image').attr('src')) {
+      case photoArray1:
+        $('.photo-array-image').attr('src', photoArray2);
+        break;
+      case photoArray2:
+        $('.photo-array-image').attr('src', photoArray3);
+        break;
+      case photoArray3:
+        $('.photo-array-image').attr('src', photoArray4);
+        break;
+      case photoArray4:
+        $('.photo-array-image').attr('src', photoArray5);
+        break;
+      case photoArray5:
+        $('.photo-array-image').attr('src', photoArray6);
+        break;
+      case photoArray6:
+        $('.photo-array-image').attr('src', photoArray1);
+        break;
+    }
   }
 });
 
@@ -63,7 +80,7 @@ $('.photo-array-focused-previous').on('click', function (e) {
   e.preventDefault();
   switch ($('.photo-array-image').attr('src')) {
     case photoArray1:
-      $('.photo-array-image').attr('src', photoArray8);
+      $('.photo-array-image').attr('src', photoArray6);
       break;
     case photoArray2:
       $('.photo-array-image').attr('src', photoArray1);
@@ -80,11 +97,32 @@ $('.photo-array-focused-previous').on('click', function (e) {
     case photoArray6:
       $('.photo-array-image').attr('src', photoArray5);
       break;
-    case photoArray7:
-      $('.photo-array-image').attr('src', photoArray6);
-      break;
-    case photoArray8:
-      $('.photo-array-image').attr('src', photoArray7);
-      break;
+  }
+});
+
+window.addEventListener('keydown', function(e) {
+  if (e.keyCode == 37) {
+    e.stopImmediatePropagation();
+    e.preventDefault();
+    switch ($('.photo-array-image').attr('src')) {
+      case photoArray1:
+        $('.photo-array-image').attr('src', photoArray6);
+        break;
+      case photoArray2:
+        $('.photo-array-image').attr('src', photoArray1);
+        break;
+      case photoArray3:
+        $('.photo-array-image').attr('src', photoArray2);
+        break;
+      case photoArray4:
+        $('.photo-array-image').attr('src', photoArray3);
+        break;
+      case photoArray5:
+        $('.photo-array-image').attr('src', photoArray4);
+        break;
+      case photoArray6:
+        $('.photo-array-image').attr('src', photoArray5);
+        break;
+    }
   }
 });
