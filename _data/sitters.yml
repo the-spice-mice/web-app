@@ -24,6 +24,13 @@
     photo4: /images/house04.jpg
     photo5: /images/house05.jpg
     photo6: /images/house06.jpg
+  photoAlts:
+    photo1Alt: Test Text 1
+    photo2Alt: Test Text 2
+    photo3Alt: Test Text 3
+    photo4Alt: Test Text 4
+    photo5Alt: Test Text 5
+    photo6Alt: Test Text 6
 - profileImg: profile-helen.jpg
   topSitter: false
   name: Helen Jones
@@ -50,6 +57,13 @@
     photo4: /images/house03.jpg
     photo5: /images/house02.jpg
     photo6: /images/house01.jpg
+  photoAlts:
+    photo1Alt: Test Text 1
+    photo2Alt: Test Text 2
+    photo3Alt: Test Text 3
+    photo4Alt: Test Text 4
+    photo5Alt: Test Text 5
+    photo6Alt: Test Text 6
 - profileImg: profile-meghan.jpg
   topSitter: false
   name: Meghan Davis
@@ -76,6 +90,13 @@
     photo4: /images/house03.jpg
     photo5: /images/house02.jpg
     photo6: /images/house01.jpg
+  photoAlts:
+    photo1Alt: Test Text 1
+    photo2Alt: Test Text 2
+    photo3Alt: Test Text 3
+    photo4Alt: Test Text 4
+    photo5Alt: Test Text 5
+    photo6Alt: Test Text 6
 - profileImg: profile-jason.jpg
   topSitter: true
   name: Jason Nicholls
@@ -102,6 +123,13 @@
     photo4: /images/house03.jpg
     photo5: /images/house02.jpg
     photo6: /images/house01.jpg
+  photoAlts:
+    photo1Alt: Test Text 1
+    photo2Alt: Test Text 2
+    photo3Alt: Test Text 3
+    photo4Alt: Test Text 4
+    photo5Alt: Test Text 5
+    photo6Alt: Test Text 6
 - profileImg: profile-juliet.jpg
   topSitter: true
   name: Juliet Davis
@@ -128,6 +156,13 @@
     photo4: /images/house03.jpg
     photo5: /images/house02.jpg
     photo6: /images/house01.jpg
+  photoAlts:
+    photo1Alt: Test Text 1
+    photo2Alt: Test Text 2
+    photo3Alt: Test Text 3
+    photo4Alt: Test Text 4
+    photo5Alt: Test Text 5
+    photo6Alt: Test Text 6
 - profileImg: profile-kennedy.jpg
   topSitter: false
   name: Kennedy McDougall
@@ -154,3 +189,10 @@
     photo4: /images/house03.jpg
     photo5: /images/house02.jpg
     photo6: /images/house01.jpg
+  photoAlts:
+    photo1Alt: Test Text 1
+    photo2Alt: Test Text 2
+    photo3Alt: Test Text 3
+    photo4Alt: Test Text 4
+    photo5Alt: Test Text 5
+    photo6Alt: Test Text 6
