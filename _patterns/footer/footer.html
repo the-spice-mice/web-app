@@ -38,10 +38,10 @@
 
     <small class="unit xs-1 s-1 m-1-4 unit-pull-m-3-4 island">
       <ul class="pad-t list-group bold">
-        <li class="push-1-4"><a href="#">Home</a></li>
-        <li class="push-1-4"><a href="#">My Bookings</a></li>
-        <li class="push-1-4"><a href="#">About</a></li>
-        <li class="push-1-4"><a href="#">Sign In</a></li>
+        <li class="push-1-4"><a href="{% if page.url contains 'owner' %}/owner{% endif %}/">Home</a></li>
+        <li class="push-1-4"><a class="{% unless page.signin %} force-login{% endunless %}" href="{% if page.url contains 'owner' %}/owner/my-bookings{% elsif page.url contains 'sitter' %}/sitter{% else %}/my-bookings{% endif %}">My Bookings</a></li>
+        <li class="push-1-4"><a href="{% if page.url contains 'owner' %}/owner{% endif %}{% if page.url contains 'sitter' %}/sitter{% endif %}/about"">About</a></li>
+        <li class="push-1-4"><a class="force-login" href="#">Sign In</a></li>
         <li class="push-1-4"><a href="#">Contact Us</a></li>
       </ul>
     </small>

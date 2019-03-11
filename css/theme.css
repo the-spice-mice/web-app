@@ -33,7 +33,7 @@ h1, h2, h3 {
   font-family: var(--font-secondary);
 }
 
-h1:not(.logo) {
+h1:not(.logo):not(.red-header):not(.headline) {
   color: #000;
   text-align: center;
 }
