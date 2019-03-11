@@ -33,7 +33,7 @@ h1, h2, h3 {
   font-family: var(--font-secondary);
 }
 
-h1 {
+h1:not(.logo) {
   color: #000;
   text-align: center;
 }
