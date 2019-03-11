@@ -3,6 +3,11 @@
   color: #fff;
 }
 
+.footer a:hover {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
 .footer {
   background-color: var(--color-grey-dark);
   color: #fff;
